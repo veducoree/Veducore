@@ -66,6 +66,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--ink);font:15px/1.7 var(--f);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+main,footer{overflow-x:clip}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -123,12 +124,16 @@ header.sc{box-shadow:0 12px 30px -22px rgba(23,19,63,.4)}
 .ham.open span{background:transparent}
 .ham.open span::before{transform:translateY(6px) rotate(45deg)}
 .ham.open span::after{transform:translateY(-6px) rotate(-45deg)}
-.mob{display:none;position:fixed;inset:76px 0 0;background:#fff;z-index:99;padding:20px 24px 32px;flex-direction:column;gap:4px;overflow-y:auto}
-.mob.open{display:flex}
+.mob{display:none;position:fixed;top:76px;left:0;right:0;bottom:0;height:calc(100dvh - 76px);background:#fff;z-index:99;padding:20px max(24px,env(safe-area-inset-left)) max(32px,env(safe-area-inset-bottom));flex-direction:column;gap:4px;overflow-y:auto;overscroll-behavior:contain;border-top:1px solid var(--line)}
+.mob.open{display:flex;animation:mobIn .25s ease}
+@keyframes mobIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+header.mopen{background:#fff;box-shadow:none}
+body.noscroll{overflow:hidden}
 .mob a:not(.btn){padding:14px 16px;font-size:19px;font-weight:600;border-radius:16px}
 .mob a:not(.btn):hover{background:var(--lav);color:var(--brand)}
 .mob .btn{margin-top:20px;height:56px}
-@media(max-width:860px){.nav-links,.nav-r .btn.ghost{display:none}.ham{display:grid}}
+@media(min-width:861px){.mob{display:none!important}}
+@media(max-width:860px){.nav-links,.nav-r .btn.ghost{display:none}.ham{display:grid;flex-shrink:0}.nav{height:68px}.mob{top:68px;height:calc(100dvh - 68px)}}
 @media(max-width:420px){.nav-r .btn.blue{display:none}}
 
 /* hero */
@@ -412,7 +417,7 @@ footer{background:var(--brand);color:rgba(255,255,255,.78);padding:28px 0 32px;f
 .fgrid a:hover{color:var(--sun)}
 .fgrid p{margin-top:16px;max-width:300px;color:#fff;font-weight:500}
 .flogo{display:inline-flex!important;padding:0!important}
-.flogo img{display:block}
+.flogo img{display:block;filter:brightness(0) invert(1)}
 .soc{display:flex;gap:8px;margin-top:20px}
 .soc a{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.13);color:#fff;display:grid;place-items:center;padding:0;transition:all .2s}
 .soc a:hover{background:var(--sun);color:var(--ink)}
@@ -462,7 +467,8 @@ footer{background:var(--brand);color:rgba(255,255,255,.78);padding:28px 0 32px;f
       <button class="ham" id="ham" aria-label="Menu" aria-expanded="false" aria-controls="mob"><span></span></button>
     </div>
   </div>
-  <nav class="mob" id="mob" aria-label="Mobile">
+</header>
+<nav class="mob" id="mob" aria-label="Mobile">
     <a href="#industries">Industries</a>
     <a href="#platform">Platform</a>
     <a href="#build">Build your plan</a>
@@ -470,8 +476,7 @@ footer{background:var(--brand);color:rgba(255,255,255,.78);padding:28px 0 32px;f
     <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
     <a href="#contact" class="btn blue">Book a free demo</a>
-  </nav>
-</header>
+</nav>
 
 <main>
 
@@ -1155,12 +1160,12 @@ document.querySelectorAll('.qa button').forEach(function(b){
 });
 
 /* ── nav ── */
-var ham = $('ham'), mob = $('mob');
-function setMob(o){mob.classList.toggle('open',o);ham.classList.toggle('open',o);ham.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''}
+var ham = $('ham'), mob = $('mob'), hdr = $('hdr');
+function setMob(o){mob.classList.toggle('open',o);ham.classList.toggle('open',o);hdr.classList.toggle('mopen',o);ham.setAttribute('aria-expanded',o);ham.setAttribute('aria-label',o?'Close menu':'Menu');document.documentElement.style.overflow=o?'hidden':'';document.body.classList.toggle('noscroll',o)}
 ham.onclick = function(){setMob(!mob.classList.contains('open'))};
 mob.querySelectorAll('a').forEach(function(a){a.onclick=function(){setMob(false)}});
-addEventListener('resize',function(){if(innerWidth>860)setMob(false)});
-var hdr = $('hdr');
+addEventListener('resize',function(){if(innerWidth>860&&mob.classList.contains('open'))setMob(false)});
+addEventListener('keydown',function(e){if(e.key==='Escape'&&mob.classList.contains('open')){setMob(false);ham.focus()}});
 addEventListener('scroll',function(){hdr.classList.toggle('sc',scrollY>8)},{passive:true});
 
 /* ── anchor scrolling: land heading right under the header ── */
