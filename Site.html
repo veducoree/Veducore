@@ -3,1290 +3,672 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-
-<!-- ── Primary SEO ──────────────────────────────────────── -->
-<title>Veducore – School ERP & LMS Platform for Institutes, Colleges & Coaching</title>
-<meta name="description" content="Veducore is an all-in-one School OS — LMS, ERP, live classes, online tests, mobile app and growth tools for schools, colleges and coaching institutes in India. 100% white-label. Book a free demo today.">
-<meta name="keywords" content="school ERP software, LMS for schools, learning management system India, school management software, coaching institute software, online class platform, student management system, school app, fee management software, attendance management, online exam software, white label LMS, Veducore, school ERP India, edtech platform India">
+<title>Veducore – One SaaS Platform to Run Any Business | ERP, CRM, Billing & Apps</title>
+<meta name="description" content="Veducore is an all-in-one SaaS platform for every industry — education, healthcare, retail, restaurants, fitness, real estate, services and manufacturing. ERP, CRM, billing, HR, inventory, analytics and your own branded app. Book a free demo.">
+<meta name="keywords" content="SaaS platform India, business management software, ERP software, CRM software, billing software, GST invoicing, school ERP, clinic management software, gym management software, restaurant POS, retail POS, real estate CRM, HR payroll software, white label app, Veducore">
 <meta name="author" content="Veducore">
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://www.veducore.in/">
-
-<!-- ── Open Graph (Facebook / WhatsApp / LinkedIn) ──────── -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.veducore.in/">
 <meta property="og:site_name" content="Veducore">
-<meta property="og:title" content="Veducore – School ERP & LMS Platform for Institutes, Colleges & Coaching">
-<meta property="og:description" content="All-in-one School OS — ERP, LMS, live classes, online tests and mobile app. Built for schools, colleges and coaching institutes in India. 100% white-label. Book a free demo.">
+<meta property="og:title" content="Veducore – One platform to run any business">
+<meta property="og:description" content="ERP, CRM, billing, HR, inventory, analytics and your own branded app — configured for your industry.">
 <meta property="og:image" content="https://www.veducore.in/image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_IN">
-
-<!-- ── Twitter Card ──────────────────────────────────────── -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@veducore">
-<meta name="twitter:title" content="Veducore – School ERP & LMS Platform">
-<meta name="twitter:description" content="All-in-one School OS for schools, colleges and coaching institutes in India. ERP, LMS, live classes, online tests & mobile app.">
+<meta name="twitter:title" content="Veducore – One platform to run any business">
+<meta name="twitter:description" content="ERP, CRM, billing, HR, inventory, analytics and your own branded app — configured for your industry.">
 <meta name="twitter:image" content="https://www.veducore.in/image.png">
-
-<!-- ── Structured Data (JSON-LD) ────────────────────────── -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Veducore",
-  "url": "https://www.veducore.in",
-  "logo": "https://www.veducore.in/image.png",
-  "description": "All-in-one School OS — LMS, ERP, live classes, online tests and mobile app for schools, colleges and coaching institutes in India.",
-  "applicationCategory": "EducationalApplication",
-  "operatingSystem": "Web, Android, iOS",
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "INR",
-    "offerCount": "3"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+91-63887-95644",
-    "contactType": "sales",
-    "email": "veducore@gmail.com",
-    "areaServed": "IN",
-    "availableLanguage": ["English", "Hindi"]
-  },
-  "sameAs": [
-    "https://www.veducore.in"
-  ]
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"Veducore",
+  "url":"https://www.veducore.in",
+  "logo":"https://www.veducore.in/image.png",
+  "description":"All-in-one SaaS platform — ERP, CRM, billing, HR, inventory, analytics and white-label apps for businesses across industries in India.",
+  "applicationCategory":"BusinessApplication",
+  "operatingSystem":"Web, Android, iOS",
+  "contactPoint":{"@type":"ContactPoint","telephone":"+91-63887-95644","contactType":"sales","email":"veducoree@gmail.com","areaServed":"IN","availableLanguage":["English","Hindi"]},
+  "sameAs":["https://www.instagram.com/veducore_/","https://www.facebook.com/people/Veducore/61595406585639/"]
 }
 </script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-/* ── Variables ─────────────────────────────── */
 :root{
-  --f:'Plus Jakarta Sans',system-ui,sans-serif;
-  --bg:#ffffff;--card:#f6f8fd;--ink:#0f1b33;--mute:#5a6784;
-  --line:#e2e8f4;--brand:#1d4ed8;--brand-ink:#fff;--pop:#2563eb;--soft:#e6eeff;
-  --c1:#2563eb;--c2:#0d9488;--c3:#ff6b35;--c4:#e11d6a;--c5:#f5a524;
-  --radius:16px;
+  --f:'Inter',system-ui,-apple-system,sans-serif;
+  --serif:'Instrument Serif',Georgia,serif;
+  --bg:#ffffff;--bg2:#f7f7f8;--bg3:#f1f1f3;
+  --ink:#0b0d12;--ink2:#2a2e37;--mute:#6b707a;--faint:#9ba0a8;
+  --line:#ebebee;--line2:#dedee3;
+  --brand:#1d4ed8;--brand2:#2563eb;--soft:#eef2ff;
+  --ok:#059669;--warn:#d97706;
+  --r:14px;--r-lg:20px;
+  --shadow:0 1px 2px rgba(11,13,18,.04),0 8px 24px -12px rgba(11,13,18,.12);
+  --shadow-lg:0 2px 4px rgba(11,13,18,.04),0 30px 60px -24px rgba(11,13,18,.22);
+  color-scheme:light;
 }
-/* Force light mode always — no dark mode */
-:root{
-  --bg:#ffffff;--card:#f6f8fd;--ink:#0f1b33;--mute:#5a6784;
-  --line:#e2e8f4;--brand:#1d4ed8;--brand-ink:#fff;--pop:#2563eb;--soft:#e6eeff;
-  color-scheme: light;
-}
-
-/* ── Reset & Base ──────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--f);overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0;z-index:-1;
-  background:linear-gradient(135deg,#f0f4ff 0%,#ffffff 40%,#f5f0ff 75%,#fff7f0 100%);
-  pointer-events:none}
-h1,h2,h3,h4{font-family:var(--f);font-weight:700;line-height:1.12;letter-spacing:-.02em}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:15.5px/1.6 var(--f);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
-button{font-family:var(--f);cursor:pointer}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0}
+h1,h2,h3,h4{font-weight:600;letter-spacing:-.025em;line-height:1.1}
+em.s{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:112px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:500;color:var(--mute);
+  padding:5px 12px 5px 6px;border:1px solid var(--line);border-radius:99px;background:var(--bg)}
+.eyebrow i{width:18px;height:18px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-style:normal;color:var(--brand);font-size:10px}
+.head{max-width:640px;margin-bottom:56px}
+.head.ctr{margin-inline:auto;text-align:center}
+.head h2{font-size:clamp(30px,4.4vw,48px);margin-top:18px}
+.head p{color:var(--mute);font-size:17px;margin-top:16px}
 
-/* ── Layout ────────────────────────────────── */
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-section{padding:80px 0}
-section.tight{padding:60px 0}
-.head{max-width:620px;margin-bottom:40px}
-.head h2{font-size:clamp(26px,4vw,44px)}
-.head p{color:var(--mute);margin:14px 0 0}
-.ctr{text-align:center;margin-inline:auto}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:10px;
+  font-weight:500;font-size:14.5px;background:var(--ink);color:#fff;border:1px solid var(--ink);
+  transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px -10px rgba(11,13,18,.5)}
+.btn.blue{background:var(--brand);border-color:var(--brand)}
+.btn.blue:hover{box-shadow:0 10px 24px -10px rgba(29,78,216,.6)}
+.btn.ghost{background:var(--bg);color:var(--ink);border-color:var(--line2)}
+.btn.ghost:hover{border-color:var(--ink);box-shadow:none}
+.btn.sm{height:36px;padding:0 14px;font-size:13.5px;border-radius:9px}
+.btn svg{transition:transform .2s}
+.btn:hover svg{transform:translateX(2px)}
 
-/* ── Header / Nav ──────────────────────────── */
-header{
-  position:sticky;top:env(safe-area-inset-top,0px);z-index:160;
-  background:color-mix(in srgb,var(--bg) 90%,transparent);
-  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--line);transition:box-shadow .3s
-}
-header.sc{box-shadow:0 8px 24px -18px rgba(15,27,51,.5)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
-.logo{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:700;color:var(--ink);flex-shrink:0}
-.logo img{height:38px;width:auto;display:block}
+/* header */
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.sc{border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo img{height:34px;width:auto}
+.nav-links{display:flex;gap:4px;list-style:none}
+.nav-links a{display:block;padding:7px 12px;border-radius:8px;font-size:14px;color:var(--mute);transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--ink);background:var(--bg2)}
+.nav-r{display:flex;align-items:center;gap:8px}
+.ham{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);place-items:center}
+.ham span{display:block;width:16px;height:1.5px;background:var(--ink);position:relative;transition:background .2s}
+.ham span::before,.ham span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:var(--ink);transition:transform .3s}
+.ham span::before{top:-5px}.ham span::after{top:5px}
+.ham.open span{background:transparent}
+.ham.open span::before{transform:translateY(5px) rotate(45deg)}
+.ham.open span::after{transform:translateY(-5px) rotate(-45deg)}
+.mob{display:none;position:fixed;inset:68px 0 0;background:var(--bg);z-index:99;padding:24px;flex-direction:column;gap:4px;overflow-y:auto}
+.mob.open{display:flex}
+.mob a:not(.btn){padding:14px 4px;font-size:20px;font-weight:500;border-bottom:1px solid var(--line)}
+.mob .btn{margin-top:20px;height:50px}
+@media(max-width:860px){.nav-links,.nav-r .btn.ghost{display:none}.ham{display:grid}}
+@media(max-width:420px){.nav-r .btn.blue{display:none}}
 
-/* Desktop nav */
-.nav-links{display:flex;gap:24px;list-style:none;font-size:14px;font-weight:500;color:var(--mute)}
-/* Force hide on mobile via CSS */
-@media(max-width:760px){
-  .nav-links{display:none!important}
-  #navCta{display:none!important}
-  .ham{display:flex!important}
-}
-.nav-links a{position:relative;padding:4px 0;transition:color .25s}
-.nav-links a:hover{color:var(--ink)}
-.nav-links a::after{content:"";position:absolute;left:0;bottom:-3px;height:2px;width:0;
-  background:var(--brand);transition:width .3s;border-radius:2px}
-.nav-links a:hover::after{width:100%}
+/* hero */
+.hero{padding:88px 0 0;text-align:center;position:relative}
+.hero::before{content:"";position:absolute;inset:0 0 auto;height:620px;z-index:-1;
+  background:radial-gradient(60% 50% at 50% 0%,rgba(37,99,235,.09),transparent 70%),
+  linear-gradient(var(--line) 1px,transparent 1px) 0 0/56px 56px,
+  linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/56px 56px;
+  -webkit-mask-image:radial-gradient(70% 60% at 50% 20%,#000 30%,transparent 80%);mask-image:radial-gradient(70% 60% at 50% 20%,#000 30%,transparent 80%);opacity:.9}
+.hero h1{font-size:clamp(38px,6.6vw,78px);max-width:900px;margin:22px auto 0;letter-spacing:-.04em}
+.rot{display:inline-grid;vertical-align:bottom;overflow:hidden;height:1.12em;color:var(--brand)}
+.rot span{grid-area:1/1;transform:translateY(110%);opacity:0;transition:transform .6s cubic-bezier(.7,0,.2,1),opacity .4s;white-space:nowrap;font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;padding-right:.08em}
+.rot span.on{transform:none;opacity:1}
+.rot span.out{transform:translateY(-110%);opacity:0}
+.hero p.lead{color:var(--mute);font-size:clamp(16px,2vw,19px);max-width:620px;margin:22px auto 0}
+.hero .ctas{display:flex;gap:10px;justify-content:center;margin-top:32px;flex-wrap:wrap}
+.trust{display:flex;gap:28px;justify-content:center;margin-top:28px;flex-wrap:wrap;font-size:13px;color:var(--mute)}
+.trust span{display:inline-flex;align-items:center;gap:6px}
+.trust svg{color:var(--ok)}
 
-/* Hamburger */
-.ham{display:none;flex-direction:column;justify-content:space-between;
-  width:32px;height:22px;background:none;border:none;padding:0;cursor:pointer;z-index:200;position:relative}
-.ham span{display:block;height:2.5px;border-radius:3px;background:var(--ink);
-  transition:transform .35s cubic-bezier(.4,0,.2,1),opacity .25s,width .3s}
-.ham span:last-child{width:65%;margin-left:auto}
-.ham.open span:first-child{transform:translateY(9.75px) rotate(45deg);width:100%}
-.ham.open span:nth-child(2){opacity:0;transform:scaleX(0)}
-.ham.open span:last-child{width:100%;transform:translateY(-9.75px) rotate(-45deg)}
+/* industry pills */
+.pills{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:64px auto 18px;max-width:900px}
+.pill{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 14px;border-radius:99px;border:1px solid var(--line);
+  background:var(--bg);font-size:13.5px;font-weight:500;color:var(--mute);transition:all .2s}
+.pill:hover{color:var(--ink);border-color:var(--line2)}
+.pill.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pill svg{width:15px;height:15px}
 
-/* Mobile drawer — full screen overlay */
-.mob-nav{
-  display:none;
-  position:fixed;
-  top:0;left:0;right:0;bottom:0;
-  width:100%;
-  height:100%;
-  min-height:100vh;
-  min-height:100dvh;
-  background:#ffffff;
-  z-index:155;
-  flex-direction:column;
-  justify-content:flex-start;
-  align-items:stretch;
-  gap:0;
-  padding:0;
-  overflow-y:auto;
-  -webkit-overflow-scrolling:touch;
-}
-.mob-nav-bar{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  width:100%;
-  padding:0 20px;
-  height:64px;
-  border-bottom:none;
-  flex-shrink:0;
-  position:sticky;
-  top:0;
-  background:#ffffff;
-  z-index:10;
-  box-sizing:border-box;
-}
-.mob-nav-links{
-  flex:1;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:4px;
-  padding-bottom:40px;
-}
-.mob-nav-close{
-  width:40px;height:40px;
-  display:flex!important;align-items:center;justify-content:center;
-  background:none;border:none;cursor:pointer;
-  font-size:24px;color:var(--ink);
-  border-radius:50%;
-  transition:background .2s;
-  flex-shrink:0;
-}
-.mob-nav-close:hover{background:var(--card)}
-.mob-nav.open{display:flex}
-.mob-nav a{
-  display:block;
-  width:100%;
-  padding:18px 24px;
-  text-align:center;
-  font-size:22px;font-weight:700;
-  color:var(--ink);
-  border:none;
-  transition:color .2s;
-  letter-spacing:-.01em;
-}
-/* Logo link inside nav-bar should not stretch */
-.mob-nav .mob-nav-bar a.logo{
-  width:auto;
-  padding:0;
-  display:flex;
-}
-.mob-nav a:not(.btn):hover,.mob-nav a:not(.btn):active{color:var(--brand)}
-.mob-nav a.btn{color:#fff!important;white-space:nowrap}
-/* Hamburger — hide when drawer is open */
-.ham.open{display:none!important}
+/* dashboard mock */
+.stage{position:relative;max-width:1060px;margin:0 auto;padding:0 0 8px}
+.dash{border:1px solid var(--line2);border-radius:var(--r-lg);background:var(--bg);box-shadow:var(--shadow-lg);overflow:hidden;text-align:left}
+.dbar{display:flex;align-items:center;gap:8px;height:42px;padding:0 16px;border-bottom:1px solid var(--line);background:var(--bg2)}
+.dbar i{width:10px;height:10px;border-radius:50%;background:var(--line2)}
+.dbar .url{margin:0 auto;font-size:12px;color:var(--faint);background:var(--bg);border:1px solid var(--line);padding:3px 14px;border-radius:7px;min-width:220px;text-align:center}
+.dbody{display:grid;grid-template-columns:210px 1fr;min-height:430px}
+.dside{border-right:1px solid var(--line);padding:16px 12px;background:var(--bg)}
+.dorg{display:flex;align-items:center;gap:10px;padding:6px 8px 16px}
+.dorg b{width:30px;height:30px;border-radius:8px;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:13px}
+.dorg div{font-size:13px;font-weight:600;line-height:1.2}
+.dorg small{display:block;font-weight:400;color:var(--faint);font-size:11.5px}
+.dnav{list-style:none;display:grid;gap:2px}
+.dnav li{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;font-size:13px;color:var(--mute);cursor:pointer;transition:background .2s,color .2s}
+.dnav li:hover{background:var(--bg2);color:var(--ink)}
+.dnav li.on{background:var(--soft);color:var(--brand);font-weight:500}
+.dnav li::before{content:"";width:6px;height:6px;border-radius:2px;background:currentColor;opacity:.5}
+.dmain{padding:22px 24px;background:var(--bg)}
+.dtop{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}
+.dtop h4{font-size:17px;letter-spacing:-.02em}
+.dtop small{display:block;color:var(--faint);font-size:12px;font-weight:400;letter-spacing:0;margin-top:2px}
+.dtag{font-size:11.5px;color:var(--ok);background:#ecfdf5;border:1px solid #d1fae5;border-radius:99px;padding:3px 10px;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.dtag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ok);animation:blink 1.6s infinite}
+@keyframes blink{50%{opacity:.3}}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.kpi{border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.kpi small{color:var(--mute);font-size:12px}
+.kpi b{display:block;font-size:24px;font-weight:600;letter-spacing:-.03em;margin-top:4px}
+.kpi em{font-style:normal;font-size:11.5px;color:var(--ok)}
+.dgrid{display:grid;grid-template-columns:1.4fr 1fr;gap:12px;margin-top:12px}
+.panel{border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.panel h5{font-size:12.5px;font-weight:500;color:var(--mute);margin-bottom:12px;display:flex;justify-content:space-between}
+.chart{display:flex;align-items:flex-end;gap:10px;height:150px}
+.chart div{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end}
+.chart span{width:100%;max-width:34px;border-radius:6px 6px 3px 3px;background:var(--soft);height:0;transition:height .7s cubic-bezier(.2,.8,.2,1),background .3s}
+.chart div:hover span,.chart div.hi span{background:var(--brand)}
+.chart label{font-size:10.5px;color:var(--faint)}
+.feed{list-style:none;display:grid;gap:2px}
+.feed li{display:flex;gap:10px;align-items:center;padding:7px 0;font-size:12.5px;border-bottom:1px dashed var(--line);opacity:0;transform:translateY(6px);transition:opacity .4s,transform .4s}
+.feed li.in{opacity:1;transform:none}
+.feed li:last-child{border:0}
+.feed i{width:26px;height:26px;border-radius:7px;background:var(--bg2);display:grid;place-items:center;font-style:normal;font-size:12px;flex-shrink:0}
+.feed span{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.feed time{color:var(--faint);font-size:11px}
+.fade{transition:opacity .25s}
+.fade.out{opacity:0}
+@media(max-width:820px){.dbody{grid-template-columns:1fr}.dside{display:none}.dgrid{grid-template-columns:1fr}.feedp{display:none}}
+@media(max-width:520px){.kpis{grid-template-columns:1fr 1fr}.kpi:last-child{display:none}.dmain{padding:16px}.kpi b{font-size:20px}.dbar .url{min-width:0}.chart{height:120px;gap:6px}}
 
 
-/* ── Buttons ───────────────────────────────── */
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;
-  padding:12px 22px;border-radius:10px;font-weight:600;font-size:15px;
-  background:var(--brand);color:var(--brand-ink);border:1.5px solid var(--brand);
-  transition:transform .25s,box-shadow .25s,background .2s;cursor:pointer;
-  white-space:nowrap
-}
-.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px -8px rgba(29,78,216,.45)}
-.btn:active{transform:translateY(0)}
-.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
-.btn.ghost:hover{border-color:var(--brand);color:var(--brand);box-shadow:0 8px 18px -8px rgba(29,78,216,.2)}
-.btn.pop{background:var(--pop);border-color:var(--pop);color:#fff}
-.hot .btn{background:#fff!important;color:var(--brand)!important;border-color:#fff!important}
+/* industries grid */
+.ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
+.ind{background:var(--bg);padding:28px 24px 26px;position:relative;cursor:pointer;transition:background .25s;display:flex;flex-direction:column;min-height:230px}
+.ind:hover{background:var(--bg2)}
+.ind .ico{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);display:grid;place-items:center;background:var(--bg);color:var(--ink);transition:all .25s}
+.ind:hover .ico{background:var(--ink);color:#fff;border-color:var(--ink)}
+.ind h3{font-size:17px;margin-top:20px}
+.ind p{font-size:13.5px;color:var(--mute);margin-top:6px}
+.ind .tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:auto;padding-top:16px}
+.ind .tags span{font-size:11.5px;padding:2px 8px;border-radius:6px;background:var(--bg2);color:var(--mute);border:1px solid var(--line)}
+.ind .arr{position:absolute;top:26px;right:22px;color:var(--faint);opacity:0;transform:translate(-4px,4px);transition:all .25s}
+.ind:hover .arr{opacity:1;transform:none;color:var(--ink)}
+@media(max-width:960px){.ind-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.ind-grid{grid-template-columns:1fr}.ind{min-height:0}}
 
-/* ── Eyebrow ───────────────────────────────── */
-.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--c3);font-weight:600;margin-bottom:14px}
+/* modules bento */
+.bg2{background:var(--bg2);border-block:1px solid var(--line)}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.mod{grid-column:span 2;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;position:relative;overflow:hidden;transition:border-color .3s,transform .3s}
+.mod::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;
+  background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),rgba(37,99,235,.07),transparent 60%)}
+.mod:hover{border-color:var(--line2)}
+.mod:hover::after{opacity:1}
+.mod.w3{grid-column:span 3}
+.mod h3{font-size:17px;display:flex;align-items:center;gap:10px}
+.mod h3 svg{width:18px;height:18px;color:var(--brand)}
+.mod p{color:var(--mute);font-size:14px;margin-top:8px;max-width:420px}
+.mod .vis{margin-top:22px}
+.mini-tbl{border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:12.5px}
+.mini-tbl div{display:flex;justify-content:space-between;padding:9px 12px;border-bottom:1px solid var(--line)}
+.mini-tbl div:last-child{border:0}
+.mini-tbl b{font-weight:500}
+.st{font-size:11px;padding:1px 8px;border-radius:99px;white-space:nowrap;flex-shrink:0}
+.mini-tbl b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-right:8px}
+.st.p{background:#ecfdf5;color:var(--ok)}.st.d{background:#fffbeb;color:var(--warn)}
+.chat{display:grid;gap:8px;font-size:12.5px}
+.chat div{max-width:85%;padding:8px 12px;border-radius:12px;background:var(--bg2);border:1px solid var(--line)}
+.chat div.me{justify-self:end;background:#dcfce7;border-color:#bbf7d0}
+.phone{width:150px;height:200px;margin:0 auto -60px;border:6px solid var(--ink);border-bottom:0;border-radius:24px 24px 0 0;padding:14px 10px;background:var(--bg)}
+.phone i{display:block;height:8px;border-radius:4px;background:var(--bg3);margin-bottom:8px}
+.phone i:first-child{width:50%;background:var(--brand);height:10px}
+.phone .g{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:12px}
+.phone .g i{height:36px;border-radius:8px;margin:0}
+.toggle-list{display:grid;gap:8px}
+.tg{display:flex;justify-content:space-between;align-items:center;font-size:13px;padding:8px 12px;border:1px solid var(--line);border-radius:10px}
+.sw{width:30px;height:18px;border-radius:99px;background:var(--line2);position:relative;transition:background .2s;cursor:pointer;flex-shrink:0}
+.sw::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.2);transition:transform .2s}
+.sw.on{background:var(--brand)}.sw.on::after{transform:translateX(12px)}
+.spark{width:100%;height:70px}
+@media(max-width:960px){.bento{grid-template-columns:1fr 1fr}.mod,.mod.w3{grid-column:span 1}.mod:last-child{grid-column:1/-1}}
+@media(max-width:620px){.bento{grid-template-columns:1fr}}
 
-/* ── Hero ──────────────────────────────────── */
-.hero{
-  padding:68px 0 48px;
-  display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;
-  overflow:visible
-}
-.hero h1{font-size:clamp(34px,5vw,62px)}
-.hero h1 em{font-style:normal;color:var(--brand)}
-.hero p{color:var(--mute);font-size:clamp(16px,2vw,18px);max-width:500px;margin:18px 0 26px}
-.row{display:flex;gap:12px;flex-wrap:wrap}
-.hs{display:flex;gap:28px;margin-top:32px;flex-wrap:wrap}
-.hs b{display:block;font:700 26px/1 var(--f);color:var(--c1)}
-.hs div:nth-child(2) b{color:var(--c3)}
-.hs div:nth-child(3) b{color:var(--c2)}
-.hs>div{font-size:13px;color:var(--mute)}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;counter-reset:s}
+.step{padding:28px 0 0;border-top:1px solid var(--line2);position:relative}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-style:italic;font-size:22px;color:var(--brand)}
+.step h3{font-size:19px;margin-top:14px}
+.step p{color:var(--mute);font-size:14.5px;margin-top:8px}
+.step .bar{position:absolute;top:-1px;left:0;height:1px;width:0;background:var(--ink);transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.step.in .bar{width:100%}
+@media(max-width:760px){.steps{grid-template-columns:1fr;gap:28px}}
 
-/* ── Orbit / Solar System ──────────────────── */
-.orb{display:flex;justify-content:center;align-items:center;overflow:visible;min-height:420px}
-.sys{position:relative;width:420px;height:420px;overflow:visible;flex-shrink:0}
-.ring1,.ring2,.ring3{
-  position:absolute;border-radius:50%;
-  top:50%;left:50%;transform:translate(-50%,-50%);animation:spinRing 60s linear infinite
-}
-.ring1{width:180px;height:180px;animation-duration:80s;
-  border:1.5px dashed rgba(99,102,241,.5)}
-.ring2{width:380px;height:380px;animation-duration:100s;
-  border:1.5px dashed rgba(139,92,246,.35)}
-.ring3{width:480px;height:480px;animation-duration:120s;
-  border:1.5px dashed rgba(99,102,241,.22)}
-@keyframes spinRing{to{transform:translate(-50%,-50%) rotate(360deg)}}
-.orb-glow{
-  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  width:220px;height:220px;border-radius:50%;pointer-events:none;
-  background:radial-gradient(circle,rgba(99,102,241,.22) 0%,rgba(139,92,246,.1) 50%,transparent 75%);
-  filter:blur(22px);animation:glowPulse 3.5s ease-in-out infinite
-}
-@keyframes glowPulse{
-  0%,100%{opacity:.8;transform:translate(-50%,-50%) scale(1)}
-  50%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}
-}
-.orb-core{
-  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  width:150px;height:150px;border-radius:50%;
-  background:radial-gradient(circle at 38% 35%,#fff 0%,#EEF2FF 55%,#C7D2FE 100%);
-  border:2px solid rgba(99,102,241,.25);
-  display:grid;place-content:center;text-align:center;color:var(--ink);
-  box-shadow:0 0 0 12px rgba(99,102,241,.07),0 0 0 26px rgba(139,92,246,.04),0 0 44px 10px rgba(99,102,241,.2),0 16px 40px -8px rgba(99,102,241,.28);
-  z-index:2;animation:sunPulse 3.5s ease-in-out infinite
-}
-.orb-core small{display:block;font:600 9px var(--f);color:var(--mute);
-  text-transform:uppercase;letter-spacing:.12em;margin-top:3px}
-@keyframes sunPulse{
-  0%,100%{box-shadow:0 0 0 12px rgba(99,102,241,.07),0 0 0 26px rgba(139,92,246,.04),0 0 44px 10px rgba(99,102,241,.2),0 16px 40px -8px rgba(99,102,241,.28)}
-  50%{box-shadow:0 0 0 18px rgba(99,102,241,.1),0 0 0 36px rgba(139,92,246,.06),0 0 70px 18px rgba(99,102,241,.3),0 16px 50px -8px rgba(99,102,241,.4)}
-}
-.ob-card{
-  position:absolute;background:#fff;border:1px solid var(--line);
-  border-radius:14px;padding:11px 13px;width:160px;
-  box-shadow:0 8px 24px -8px rgba(15,27,51,.14);
-  display:flex;gap:9px;align-items:flex-start;z-index:3;will-change:left,top
-}
-@media(prefers-color-scheme:dark){.ob-card{background:var(--card)}}
-:root[data-theme="dark"] .ob-card{background:var(--card)}
-.ob-icon{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;flex-shrink:0}
-.ob-card h4{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:2px}
-.ob-card p{margin:0;font-size:11.5px;color:var(--mute);line-height:1.35}
-.ob-erp,.ob-growth,.ob-lms{top:0;left:0}
+/* configurator */
+.cfg{display:grid;grid-template-columns:1.25fr .75fr;gap:20px;align-items:start}
+.cfg-l{border:1px solid var(--line);border-radius:var(--r-lg);padding:28px;background:var(--bg)}
+.cfg-l h4{font-size:13px;font-weight:500;color:var(--mute);margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.cfg-l h4 b{width:20px;height:20px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:11px}
+.cfg-l .grp+.grp{margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{height:36px;padding:0 14px;border-radius:9px;border:1px solid var(--line);font-size:13.5px;color:var(--ink2);transition:all .15s;display:inline-flex;align-items:center;gap:7px;background:var(--bg)}
+.chip:hover{border-color:var(--line2);background:var(--bg2)}
+.chip.on{border-color:var(--ink);background:var(--ink);color:#fff}
+.chip .ck{width:14px;height:14px;border-radius:4px;border:1.5px solid var(--line2);display:grid;place-items:center;transition:all .15s}
+.chip.on .ck{background:#fff;border-color:#fff}
+.chip.on .ck::after{content:"";width:6px;height:3px;border-left:1.6px solid var(--ink);border-bottom:1.6px solid var(--ink);transform:rotate(-45deg) translate(1px,-1px)}
+.seg{display:grid;grid-template-columns:repeat(4,1fr);background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:3px;position:relative}
+.seg button{height:34px;font-size:13px;border-radius:7px;position:relative;z-index:1;color:var(--mute);transition:color .2s}
+.seg button.on{color:var(--ink);font-weight:500}
+.seg .thumb{position:absolute;top:3px;bottom:3px;left:3px;width:calc((100% - 6px)/4);background:var(--bg);border-radius:7px;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.cfg-r{position:sticky;top:90px;border-radius:var(--r-lg);background:var(--ink);color:#fff;padding:28px;overflow:hidden}
+.cfg-r::before{content:"";position:absolute;top:-80px;right:-80px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.55),transparent 70%);pointer-events:none}
+.cfg-r small{color:#9ca3af;font-size:12.5px}
+.cfg-r .plan{font-size:34px;font-weight:600;letter-spacing:-.03em;margin:4px 0 2px;position:relative}
+.cfg-r .plan-d{color:#9ca3af;font-size:13.5px}
+.cfg-r ul{list-style:none;margin:22px 0;display:grid;gap:8px;font-size:13.5px;max-height:240px;overflow:auto}
+.cfg-r li{display:flex;gap:10px;align-items:center;color:#e5e7eb;animation:pop .3s both}
+.cfg-r li::before{content:"";width:16px;height:16px;flex-shrink:0;border-radius:50%;background:rgba(255,255,255,.12) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='m6 12 4 4 8-8'/%3E%3C/svg%3E") center/10px no-repeat}
+@keyframes pop{from{opacity:0;transform:translateX(-6px)}}
+.cfg-r .meter{height:4px;background:rgba(255,255,255,.12);border-radius:4px;overflow:hidden;margin-top:16px}
+.cfg-r .meter i{display:block;height:100%;background:#60a5fa;border-radius:4px;transition:width .4s}
+.cfg-r .btn{width:100%;background:#fff;color:var(--ink);border-color:#fff;height:48px}
+@media(max-width:900px){.cfg{grid-template-columns:1fr}.cfg-r{position:static}}
+@media(max-width:520px){.cfg-l,.cfg-r{padding:20px}.seg button{font-size:12px}}
 
-/* Orbit hidden on mobile — show static cards instead */
-.ob-static{display:none}
-@media(max-width:860px){
-  .hero{grid-template-columns:1fr;padding-top:36px;gap:0}
-  .orb{display:none}
-  .ob-static{
-    display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
-    margin-top:28px
-  }
-  .ob-static .ob-card{position:static;width:100%}
-}
-@media(max-width:640px){
-  .ob-static{
-    grid-template-columns:1fr!important;
-    max-width:340px;
-    margin-inline:auto;
-  }
-  .ob-static .ob-card{
-    width:100%!important;
-    grid-column:auto!important;
-    max-width:100%!important;
-    margin-inline:0!important;
-  }
-}
-@media(max-width:520px){
-  .ob-static{grid-template-columns:1fr;max-width:320px;margin-inline:auto}
-}
+/* plans */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pl{border:1px solid var(--line);border-radius:var(--r-lg);padding:28px;display:flex;flex-direction:column;background:var(--bg);transition:border-color .3s,box-shadow .3s}
+.pl:hover{border-color:var(--line2);box-shadow:var(--shadow)}
+.pl.hot{border-color:var(--ink);box-shadow:var(--shadow-lg);position:relative}
+.pl.hot::before{content:"Most popular";position:absolute;top:-11px;left:28px;font-size:11.5px;font-weight:500;background:var(--ink);color:#fff;padding:3px 10px;border-radius:99px}
+.pl h3{font-size:18px}
+.pl .who{color:var(--mute);font-size:14px;margin-top:4px}
+.pl .price{font-size:30px;font-weight:600;letter-spacing:-.03em;margin:22px 0 4px}
+.pl .price small{font-size:13px;color:var(--mute);font-weight:400;letter-spacing:0}
+.pl ul{list-style:none;margin:20px 0 28px;display:grid;gap:10px;font-size:14px;color:var(--ink2)}
+.pl li{display:flex;gap:10px;align-items:flex-start}
+.pl li svg{width:16px;height:16px;flex-shrink:0;margin-top:3px;color:var(--brand)}
+.pl .btn{margin-top:auto;width:100%}
+@media(max-width:900px){.plans{grid-template-columns:1fr;max-width:480px;margin-inline:auto}}
 
-/* ── Marquee (clients) ─────────────────────── */
-.mq{overflow:hidden;border-block:1px solid var(--line);padding:18px 0;margin-top:8px}
-.mt{display:flex;gap:18px;width:max-content;animation:mq 30s linear infinite}
-.mq:hover .mt{animation-play-state:paused}
-@keyframes mq{to{transform:translateX(-50%)}}
-.lg{padding:12px 26px;border:1px dashed var(--line);border-radius:10px;
-  color:var(--mute);font-size:13px;white-space:nowrap;background:var(--card);
-  transition:border-color .2s,color .2s}
-.lg:hover{border-color:var(--brand);color:var(--brand)}
+/* faq */
+.faq{max-width:760px;margin:0 auto;border-top:1px solid var(--line)}
+.qa{border-bottom:1px solid var(--line)}
+.qa button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-size:16px;font-weight:500;text-align:left}
+.qa button i{width:24px;height:24px;border-radius:50%;border:1px solid var(--line2);position:relative;flex-shrink:0;transition:transform .3s,background .2s}
+.qa button i::before,.qa button i::after{content:"";position:absolute;top:50%;left:50%;width:10px;height:1.5px;background:var(--ink);transform:translate(-50%,-50%)}
+.qa button i::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .3s}
+.qa.open button i{transform:rotate(180deg);background:var(--bg2)}
+.qa.open button i::after{transform:translate(-50%,-50%) rotate(0)}
+.qa .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.qa.open .a{grid-template-rows:1fr}
+.qa .a>div{overflow:hidden}
+.qa .a p{color:var(--mute);font-size:15px;padding:0 44px 22px 0}
 
-/* ── Feature Marquee ───────────────────────── */
-.feat-mq-wrap{overflow:hidden;padding:28px 0;background:var(--soft);border-block:1px solid var(--line)}
-.feat-mq-track{display:flex;gap:0;width:max-content}
-.feat-mq-track.fwd{animation:fmqFwd 28s linear infinite}
-.feat-mq-track.rev{animation:fmqRev 32s linear infinite}
-@keyframes fmqFwd{to{transform:translateX(-50%)}}
-@keyframes fmqRev{from{transform:translateX(-50%)}to{transform:translateX(0)}}
-.feat-mq-wrap:hover .feat-mq-track{animation-play-state:paused}
-.fmi{display:inline-flex;align-items:center;gap:10px;padding:10px 24px;
-  margin:0 8px;border-radius:50px;background:#fff;border:1px solid var(--line);
-  font-size:14px;font-weight:600;color:var(--ink);white-space:nowrap;
-  box-shadow:0 2px 8px -4px rgba(29,78,216,.1);transition:border-color .2s,color .2s}
-.fmi:hover{border-color:var(--brand);color:var(--brand)}
-.fmi svg{flex-shrink:0}
+/* team */
+.tms{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:880px;margin:0 auto}
+.tm{border:1px solid var(--line);border-radius:var(--r-lg);padding:28px 20px;text-align:center;transition:border-color .3s,transform .3s}
+.tm:hover{border-color:var(--line2);transform:translateY(-3px)}
+.tm img{width:84px;height:84px;border-radius:50%;object-fit:cover;margin:0 auto;filter:grayscale(1);transition:filter .4s}
+.tm:hover img{filter:none}
+.tm h3{font-size:16px;margin-top:16px}
+.tm p{color:var(--mute);font-size:13.5px;margin-top:2px}
+@media(max-width:760px){.tms{grid-template-columns:1fr;max-width:340px}}
 
-/* ── Product Tour ──────────────────────────── */
-.tour{
-  max-width:820px;margin:0 auto;aspect-ratio:16/8;border-radius:18px;
-  background:linear-gradient(135deg,#1d4ed8,#0d9488);
-  display:grid;place-items:center;position:relative;color:#fff;overflow:hidden
-}
-.tour span{position:absolute;bottom:16px;font-size:13px;opacity:.85;padding:0 16px;text-align:center}
-.play{
-  width:72px;height:72px;border-radius:50%;border:0;background:#fff;color:#1d4ed8;
-  cursor:pointer;display:grid;place-items:center;padding-left:4px;
-  animation:pulse 2s infinite;transition:transform .25s
-}
-.play:hover{transform:scale(1.1)}
-@keyframes pulse{
-  0%{box-shadow:0 0 0 0 rgba(255,255,255,.55)}
-  100%{box-shadow:0 0 0 26px rgba(255,255,255,0)}
-}
-
-/* ── Features auto-marquee ─────────────────── */
-.hrow{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
-.arrows{display:none}
-/* hide manual arrows — auto scroll now */
-.fc-mq-wrap{overflow:hidden;margin-top:32px;position:relative}
-.fc-mq-wrap::before,.fc-mq-wrap::after{
-  content:"";position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none
-}
-.fc-mq-wrap::before{left:0;background:linear-gradient(to right,var(--bg),transparent)}
-.fc-mq-wrap::after{right:0;background:linear-gradient(to left,var(--bg),transparent)}
-.fc-mq-track{display:flex;gap:16px;width:max-content;animation:fcScroll 32s linear infinite}
-.fc-mq-wrap:hover .fc-mq-track{animation-play-state:paused}
-@keyframes fcScroll{to{transform:translateX(-50%)}}
-.ic{width:28px;height:28px;color:var(--brand);margin-bottom:12px}
-.fc{
-  flex:0 0 280px;
-  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-  padding:24px;border-top:3px solid var(--a);
-  transition:transform .3s,box-shadow .3s,border-color .3s;
-  user-select:none
-}
-.fc .ic{color:var(--a)}
-.fc h3{font-size:18px;margin-bottom:8px}
-.fc p{margin:0;color:var(--mute);font-size:14px;line-height:1.55}
-.fc:hover{transform:translateY(-5px);box-shadow:0 18px 36px -20px rgba(29,78,216,.45)}
-.fc:nth-child(6n+1){--a:var(--c1)}.fc:nth-child(6n+2){--a:var(--c3)}.fc:nth-child(6n+3){--a:var(--c2)}
-.fc:nth-child(6n+4){--a:var(--c4)}.fc:nth-child(6n+5){--a:var(--c5)}.fc:nth-child(6n){--a:var(--c1)}
-
-/* ── Cards / Grid ──────────────────────────── */
-.three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;
-  transition:transform .3s,box-shadow .3s,border-color .3s}
-.card h3{font-size:21px;margin-bottom:8px}
-.card p{margin:0;color:var(--mute);font-size:15px}
-.card:hover{transform:translateY(-5px);border-color:var(--a,var(--brand));
-  box-shadow:0 20px 36px -22px rgba(29,78,216,.5)}
-.num{color:var(--a,var(--c3));font-size:14px;margin-bottom:10px;display:block;font-weight:600}
-#about .card:nth-child(1){--a:var(--c3)}
-#about .card:nth-child(2){--a:var(--c2)}
-#about .card:nth-child(3){--a:var(--c4)}
-/* 2-col: last odd item centred */
-@media(max-width:960px) and (min-width:761px){
-  .three{grid-template-columns:repeat(2,1fr)}
-  .three>*:last-child:nth-child(odd){
-    grid-column:1/-1;max-width:calc(50% - 9px);margin-inline:auto
-  }
-}
-/* 1-col mobile */
-@media(max-width:760px){.three{grid-template-columns:1fr}}
-
-/* ── Plans / Pricing Cards ─────────────────── */
-.plans .card.hot{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
-.plans .hot p,.plans .hot li{color:inherit;opacity:.9}
-.plans ul{list-style:none;margin:16px 0 20px;font-size:14px}
-.plans li{padding:8px 0;border-top:1px dashed color-mix(in srgb,currentColor 22%,transparent);
-  display:flex;justify-content:space-between;align-items:center;gap:10px}
-.plans .card:not(.hot){border-top:4px solid var(--a)}
-.ck{width:16px;height:16px;flex:none;color:var(--brand)}
-.pl.hot .ck{color:#fff}
-
-/* Basic — Safe, Calm Teal */
-.plan-basic{
-  background:#F0FDF9;border:1.5px solid #B2EBE4;border-top:4px solid #0D9488;
-}
-.plan-basic h3{color:#0F4340}
-.plan-basic p{color:#4B7775}
-.plan-basic li{color:#2D6663;border-top-color:rgba(13,148,136,.2)}
-.plan-basic li b{color:#0F4340}
-.plan-basic .ck{color:#0D9488}
-.plan-basic .plan-btn{background:#0D9488;border-color:#0D9488;color:#fff}
-.plan-basic .plan-btn:hover{background:#0B8077;border-color:#0B8077;box-shadow:0 10px 22px -8px rgba(13,148,136,.45)}
-.plan-basic .plan-tag{background:#CCFBF1;color:#0D9488}
-
-/* Standard — Authority, Innovation: Deep Indigo-Purple */
-.plan-standard{
-  background:linear-gradient(145deg,#312E81 0%,#4338CA 60%,#4F46E5 100%);
-  border:1.5px solid #6366F1;border-top:4px solid #818CF8;
-  color:#fff;box-shadow:0 24px 60px -16px rgba(79,70,229,.55);transform:scale(1.03);z-index:2;
-}
-.plan-standard h3{color:#fff}
-.plan-standard p{color:#C7D2FE}
-.plan-standard li{color:#E0E7FF;border-top-color:rgba(255,255,255,.12)}
-.plan-standard li b{color:#fff}
-.plan-standard .ck{color:#A5B4FC}
-.plan-standard .plan-btn{background:#fff;border-color:#fff;color:#4338CA;font-weight:700}
-.plan-standard .plan-btn:hover{background:#EEF2FF;box-shadow:0 10px 22px -8px rgba(255,255,255,.35)}
-.plan-standard .plan-tag{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.25)}
-
-/* Premium — Luxury, Warm Amber */
-.plan-premium{
-  background:#FFFBF5;border:1.5px solid #FED7AA;border-top:4px solid #F97316;
-}
-.plan-premium h3{color:#7C2D12}
-.plan-premium p{color:#92400E}
-.plan-premium li{color:#78350F;border-top-color:rgba(249,115,22,.18)}
-.plan-premium li b{color:#7C2D12}
-.plan-premium .ck{color:#F97316}
-.plan-premium .plan-btn{background:#F97316;border-color:#F97316;color:#fff}
-.plan-premium .plan-btn:hover{background:#EA6C0A;border-color:#EA6C0A;box-shadow:0 10px 22px -8px rgba(249,115,22,.45)}
-.plan-premium .plan-tag{background:#FFEDD5;color:#F97316}
-
-.plan-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;
-  text-transform:uppercase;padding:3px 10px;border-radius:99px;margin-bottom:10px}
-.plan-btn{display:block;width:100%;padding:13px;border-radius:10px;text-align:center;
-  font:600 15px var(--f);border:1.5px solid transparent;cursor:pointer;
-  transition:transform .25s,box-shadow .25s,background .2s;margin-top:auto}
-.plan-btn:hover{transform:translateY(-2px)}
-/* 2-col at tablet: last plan centred */
-@media(max-width:860px){
-  .plan-standard{transform:scale(1)}
-  .plans .three{grid-template-columns:repeat(2,1fr)}
-  .plans .three>*:last-child:nth-child(odd){
-    grid-column:1/-1;max-width:calc(50% - 9px);margin-inline:auto
-  }
-}
-@media(max-width:600px){
-  .plans .three{grid-template-columns:1fr}
-  .plans .three>*:last-child{grid-column:auto;max-width:100%;margin-inline:0}
-}
-
-/* ── Pricing Accordion (mobile) ────────────── */
-.plan-accordion{display:none}
-@media(max-width:760px){
-  /* Hide normal 3-col grid */
-  .plans-desktop{display:none}
-  /* Show accordion */
-  .plan-accordion{display:block}
-  .pac-item{
-    border-radius:14px;overflow:hidden;margin-bottom:12px;
-    border:1.5px solid var(--line);background:var(--bg);
-  }
-  .pac-item.pac-basic{border-color:#B2EBE4}
-  .pac-item.pac-standard{border-color:#6366F1;background:linear-gradient(145deg,#312E81,#4338CA,#4F46E5);color:#fff}
-  .pac-item.pac-premium{border-color:#FED7AA}
-  .pac-header{
-    display:flex;align-items:center;justify-content:space-between;
-    padding:18px 20px;cursor:pointer;gap:12px;
-    -webkit-tap-highlight-color:transparent;user-select:none
-  }
-  .pac-header-left{display:flex;align-items:center;gap:12px}
-  .pac-badge{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
-    padding:3px 10px;border-radius:99px}
-  .pac-basic .pac-badge{background:#CCFBF1;color:#0D9488}
-  .pac-standard .pac-badge{background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.3)}
-  .pac-premium .pac-badge{background:#FFEDD5;color:#F97316}
-  .pac-title{font-size:18px;font-weight:700}
-  .pac-basic .pac-title{color:#0F4340}
-  .pac-standard .pac-title{color:#fff}
-  .pac-premium .pac-title{color:#7C2D12}
-  .pac-arrow{
-    width:28px;height:28px;border-radius:50%;
-    display:grid;place-items:center;flex-shrink:0;
-    transition:transform .3s;
-    background:rgba(0,0,0,.06)
-  }
-  .pac-standard .pac-arrow{background:rgba(255,255,255,.15)}
-  .pac-item.open .pac-arrow{transform:rotate(180deg)}
-  .pac-body{
-    max-height:0;overflow:hidden;
-    transition:max-height .4s cubic-bezier(.4,0,.2,1),padding .3s
-  }
-  .pac-item.open .pac-body{max-height:600px}
-  .pac-inner{padding:0 20px 20px}
-  .pac-sub{font-size:13px;margin-bottom:12px}
-  .pac-basic .pac-sub{color:#4B7775}
-  .pac-standard .pac-sub{color:#C7D2FE}
-  .pac-premium .pac-sub{color:#92400E}
-  .pac-list{list-style:none;font-size:14px;margin:0 0 16px}
-  .pac-list li{
-    display:flex;justify-content:space-between;align-items:center;
-    padding:9px 0;
-    border-top:1px dashed rgba(0,0,0,.1)
-  }
-  .pac-standard .pac-list li{border-top-color:rgba(255,255,255,.12);color:#E0E7FF}
-  .pac-basic .pac-list li{color:#2D6663}
-  .pac-premium .pac-list li{color:#78350F}
-  .pac-list li b{font-weight:700}
-  .pac-basic .pac-list li b{color:#0F4340}
-  .pac-standard .pac-list li b{color:#fff}
-  .pac-premium .pac-list li b{color:#7C2D12}
-  .pac-ck{width:18px;height:18px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
-  .pac-basic .pac-ck{background:#d1fae5;color:#059669}
-  .pac-standard .pac-ck{background:rgba(255,255,255,.2);color:#fff}
-  .pac-premium .pac-ck{background:#FFEDD5;color:#F97316}
-  .pac-btn{
-    display:block;width:100%;padding:13px;border-radius:10px;
-    text-align:center;font:600 15px var(--f);border:none;cursor:pointer;
-    transition:opacity .2s
-  }
-  .pac-btn:active{opacity:.8}
-  .pac-basic .pac-btn{background:#0D9488;color:#fff}
-  .pac-standard .pac-btn{background:#fff;color:#4338CA;font-weight:700}
-  .pac-premium .pac-btn{background:#F97316;color:#fff}
-}
-/* Comparison table */
-.tw{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--bg)}
-table{border-collapse:collapse;width:100%;min-width:520px;font-size:14px}
-th,td{padding:14px 18px;text-align:center;border-bottom:1px solid var(--line)}
-th:first-child,td:first-child{text-align:left;color:var(--ink);font-weight:500}
-.feat-col{color:var(--c4)!important;font-weight:700!important;font-size:15px!important}
-thead{background:var(--soft)}
-thead th{font-weight:700;font-size:15px}
-tr:last-child td{border-bottom:0}
-tr:hover:not(:first-child) td{background:rgba(37,99,235,.03)}
-.tick{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#d1fae5;color:#059669;font-size:15px;font-weight:700}
-.cross{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#fee2e2;color:#ef4444;font-size:13px;font-weight:700}
-.cmp-btn{border-radius:99px;padding:10px 18px;font-size:13px}
-.cmp-btn-row td{padding-top:20px;padding-bottom:20px}
-td:nth-child(2){color:var(--c3)}td:nth-child(3){color:var(--c1)}td:nth-child(4){color:var(--c2)}
-
-/* ── Milestones Band ───────────────────────── */
-.band{background:#0c5f58;color:#fff;border-radius:20px;padding:48px 40px}
-.band .head{margin-bottom:28px}
-.band h2{color:#fff}
-.band .eyebrow{color:#ffd166!important}
-.ms{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.ms b{display:block;font:700 38px/1 var(--f);color:#ffd166;margin-bottom:4px}
-.ms div{font-size:14px;color:#ffffffcc}
-.ms small{display:block;font-size:12px;opacity:.7;margin-top:2px}
-@media(max-width:860px){.ms{grid-template-columns:repeat(2,1fr)}.band{padding:32px 20px}}
-@media(max-width:420px){.ms{grid-template-columns:1fr}.ms b{font-size:30px}}
-
-/* ── Team ──────────────────────────────────── */
-.tms{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center;max-width:860px;margin-inline:auto}
-.tm{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-  padding:24px 14px;transition:transform .3s,box-shadow .3s,border-color .3s}
-.tm:hover{transform:translateY(-5px);border-color:var(--a,var(--brand));
-  box-shadow:0 18px 32px -18px rgba(29,78,216,.4)}
-.tm:nth-child(1){--a:var(--c1)}.tm:nth-child(2){--a:var(--c3)}
-.tm:nth-child(3){--a:var(--c2)}.tm:nth-child(4){--a:var(--c4)}
-.tm h3{font-size:17px;margin:10px 0 4px}
-.tm p{margin:0;font-size:12.5px;color:var(--mute)}
-.av{width:76px;height:76px;border-radius:50%;margin:auto;display:grid;place-items:center;
-  font:700 28px var(--f);background:color-mix(in srgb,var(--a,var(--brand)) 14%,var(--bg));
-  color:var(--a,var(--brand))}
-/* Tablet: 2-col, 3rd card centred below at same card size */
-@media(max-width:860px){
-  .tms{grid-template-columns:repeat(2,1fr)}
-  .tms>*:last-child:nth-child(odd){
-    grid-column:1/-1;
-    width:calc(50% - 8px);
-    margin-inline:auto;
-  }
-}
-/* Mobile: 1-col stacked, centered */
-@media(max-width:640px){
-  .tms{
-    grid-template-columns:1fr!important;
-    max-width:340px;
-    margin-inline:auto;
-  }
-  .tms>*:last-child:nth-child(odd){
-    grid-column:auto!important;
-    width:100%!important;
-    margin-inline:0!important;
-  }
-}
-
-/* ── Press logos ───────────────────────────── */
-.prs{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
-
-/* ── CTA / Contact ─────────────────────────── */
-.cta{
-  background:#0f2a6b!important;color:#fff!important;
-  border-radius:20px;padding:52px 44px;
-  display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center
-}
-.cta .eyebrow{color:#bcd0ff!important}
-.cta h2{font-size:clamp(24px,3.5vw,40px);color:#fff}
-.cta p{opacity:.75;margin:10px 0 0}
+/* contact */
+.cta{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;border:1px solid var(--line);border-radius:24px;padding:56px;background:
+  radial-gradient(60% 80% at 0% 0%,rgba(37,99,235,.07),transparent 60%),var(--bg)}
+.cta h2{font-size:clamp(28px,4vw,44px)}
+.cta p{color:var(--mute);margin-top:14px;font-size:16px}
+.cta .contact-lines{margin-top:28px;display:grid;gap:10px;font-size:14.5px}
+.cta .contact-lines a{display:inline-flex;align-items:center;gap:10px;color:var(--ink2)}
+.cta .contact-lines a:hover{color:var(--brand)}
+.cta .contact-lines svg{width:16px;height:16px;color:var(--mute)}
 form.lead{display:grid;gap:10px}
-.lead input{
-  padding:13px 14px;border-radius:10px;border:1px solid transparent;
-  font:inherit;font-size:15px;background:#fff;color:#0f1b33;
-  transition:border-color .2s,box-shadow .2s;outline:none
-}
-.lead input:focus{border-color:#5b8cff;box-shadow:0 0 0 3px rgba(91,140,255,.2)}
-@media(max-width:760px){.cta{grid-template-columns:1fr;padding:30px 22px}}
+.lead .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.lead input,.lead select,.lead textarea{width:100%;height:46px;padding:0 14px;border-radius:10px;border:1px solid var(--line2);background:var(--bg);font-size:14.5px;outline:none;transition:border-color .2s,box-shadow .2s}
+.lead textarea{height:84px;padding:12px 14px;resize:vertical}
+.lead select{appearance:none;background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b707a' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") right 12px center/16px no-repeat}
+.lead input:focus,.lead select:focus,.lead textarea:focus{border-color:var(--brand);box-shadow:0 0 0 4px rgba(37,99,235,.12)}
+.lead .btn{height:48px}
+#formMsg{display:none;padding:22px 20px;border-radius:14px;background:#ecfdf5;border:1px solid #d1fae5;color:#065f46;text-align:center}
+#formMsg b{display:block;font-size:16px;font-weight:600}
+#formMsg span{display:block;font-size:14px;margin:6px 0 16px;color:#047857}
+.wa-btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 20px;border-radius:10px;background:#25d366;color:#fff;font-weight:600;font-size:14.5px;transition:transform .2s,box-shadow .2s}
+.wa-btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px -10px rgba(37,211,102,.7)}
+@media(max-width:860px){.cta{grid-template-columns:1fr;padding:32px 22px;gap:32px}}
+@media(max-width:460px){.lead .two{grid-template-columns:1fr}}
 
-/* ── Footer ────────────────────────────────── */
-footer{padding:48px 0 36px;font-size:14px;color:var(--mute)}
-footer .wrap{display:grid;grid-template-columns:1.4fr 2fr;gap:40px}
-.footer-bottom-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
-footer h5{margin:0 0 10px;color:var(--ink);font-size:14px;font-weight:600}
-footer a{display:block;padding:3px 0;transition:color .2s}
-footer a:hover{color:var(--brand)}
-.foot-brand p{margin:10px 0 0;line-height:1.6}
-.soc{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
-.soc a{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:34px;height:34px;border-radius:50%;border:1px solid var(--line);
-  font-size:12px;font-weight:600;transition:background .2s,border-color .2s,color .2s
-}
-.soc a:hover{background:var(--soft);border-color:var(--brand);color:var(--brand)}
-.foot-copy{
-  margin-top:28px;padding-top:20px;border-top:1px solid var(--line);
-  font-size:13px;color:var(--mute);text-align:center
-}
-@media(max-width:760px){
-  footer .wrap{grid-template-columns:1fr;gap:32px;text-align:center}
-  .foot-brand p{max-width:320px;margin-inline:auto}
-  .soc{justify-content:center}
-  footer h5{text-align:center}
-  footer a{text-align:center}
-  /* Keep icon+text links aligned properly */
-  a[href^="tel:"],a[href^="mailto:"]{
-    display:inline-flex!important;
-    align-items:center!important;
-    justify-content:flex-start!important;
-    gap:7px!important;
-    text-align:left!important;
-  }
+/* footer */
+footer{border-top:1px solid var(--line);padding:56px 0 32px;font-size:14px;color:var(--mute);margin-top:112px}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px}
+.fgrid h5{font-size:13px;font-weight:600;color:var(--ink);margin-bottom:12px}
+.fgrid a{display:block;padding:4px 0;transition:color .2s}
+.fgrid a:hover{color:var(--ink)}
+.fgrid p{margin-top:14px;max-width:300px}
+.soc{display:flex;gap:8px;margin-top:18px}
+.soc a{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);display:grid;place-items:center;padding:0;transition:all .2s}
+.soc a:hover{border-color:var(--ink);color:var(--ink)}
+.fbot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:48px;padding-top:24px;border-top:1px solid var(--line);font-size:13px}
+@media(max-width:760px){.fgrid{grid-template-columns:1fr 1fr}.fgrid>div:first-child{grid-column:1/-1}}
 
-  /* Two-col: Quick Links | Legal + Get in touch */
-  .footer-bottom-cols{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:24px;
-    text-align:left;
-  }
-  .footer-bottom-cols h5{text-align:left}
-  .footer-bottom-cols a{text-align:left}
-
-  .foot-copy{display:flex;flex-direction:column;gap:6px;align-items:center}
-  .foot-copy span[style]{display:none}
-}
-
-/* ── Scroll reveal ─────────────────────────── */
-.js .rv{opacity:0;transform:translateY(22px);
-  transition:opacity .65s cubic-bezier(.2,.7,.2,1),transform .65s cubic-bezier(.2,.7,.2,1);
-  transition-delay:var(--d,0s)}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
 .js .rv.in{opacity:1;transform:none}
-@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-.hero>div:first-child>*{animation:up .7s both}
-.hero>div:first-child>*:nth-child(2){animation-delay:.08s}
-.hero>div:first-child>*:nth-child(3){animation-delay:.16s}
-.hero>div:first-child>*:nth-child(4){animation-delay:.24s}
-.hero>div:first-child>*:nth-child(5){animation-delay:.32s}
-
-/* ── Reduced motion ────────────────────────── */
-@media(prefers-reduced-motion:reduce){
-  *{animation:none!important;transition:none!important}
-  .js .rv{opacity:1;transform:none}
-  .fc-mq-track,.feat-mq-track,.mt{animation:none!important}
-}
-
-/* ── Utility ───────────────────────────────── */
-@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
-@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-
-/* ════════════════════════════════════════════
-   RESPONSIVE — Mobile & Tablet
-   ════════════════════════════════════════════ */
-
-/* ── Tablet landscape (≤1024px) ────────────── */
-@media(max-width:1024px){
-  .hero{grid-template-columns:1fr 1fr;gap:24px}
-  .sys{width:340px;height:340px}
-  .orb{min-height:340px}
-}
-
-/* ── Tablet portrait (≤860px) ──────────────── */
-@media(max-width:860px){
-  .hero{grid-template-columns:1fr;padding:36px 0 28px;gap:0}
-  .hero>div:first-child{text-align:center}
-  .hero p{margin-inline:auto}
-  .row{justify-content:center}
-  .hs{justify-content:center}
-  .orb{display:none}
-  .ob-static{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
-  .ob-static .ob-card{position:static;width:100%}
-  .plan-standard{transform:scale(1)}
-  .hrow{flex-direction:column;align-items:flex-start}
-  .cta{grid-template-columns:1fr;padding:32px 24px}
-}
-
-/* ── Mobile large (≤640px) ─────────────────── */
-@media(max-width:640px){
-  .hero h1{font-size:clamp(28px,8vw,42px)}
-  .hero p{font-size:15px}
-  .ob-static{
-    grid-template-columns:1fr!important;
-    max-width:340px;
-    margin-inline:auto;
-  }
-  .ob-static .ob-card{
-    width:100%!important;
-    grid-column:auto!important;
-    max-width:100%!important;
-    margin-inline:0!important;
-  }
-  .cta{padding:28px 18px}
-  .cta h2{font-size:clamp(22px,6vw,32px)}
-  .wrap{padding:0 16px}
-  section{padding:52px 0}
-  section.tight{padding:40px 0}
-  .head{margin-bottom:28px}
-  .plan-btn{font-size:14px;padding:12px}
-  .nav{height:60px}
-  .logo img{height:30px}
-}
-
-/* ── Mobile small (≤480px) ─────────────────── */
-@media(max-width:480px){
-  .ob-static{grid-template-columns:1fr}
-  .hs{gap:18px}
-  .hs b{font-size:22px}
-  .row{flex-direction:column;align-items:stretch}
-  .row .btn{text-align:center;justify-content:center}
-  .cta{padding:24px 16px}
-  .head h2{font-size:clamp(22px,7vw,32px)}
-  .plan-standard{transform:scale(1)}
-  .fmi{font-size:13px;padding:9px 18px}
-}
-
-/* ── Mobile XS (≤360px) ────────────────────── */
-@media(max-width:360px){
-  .wrap{padding:0 12px}
-  .btn{padding:11px 16px;font-size:14px}
-  .hero h1{font-size:24px}
-  .logo img{height:26px}
-  .ob-card h4{font-size:12px}
-  .ob-card p{font-size:11px}
-  .nav{height:56px}
-}
-
-/* ── Prevent horizontal overflow everywhere ─── */
-html,body{max-width:100%;overflow-x:hidden}
-img,svg,video{max-width:100%;height:auto}
-.fc-mq-wrap,.feat-mq-wrap,.mq{overflow:hidden}
-
-/* ── Touch targets ──────────────────────────── */
-@media(hover:none){
-  .btn:hover{transform:none;box-shadow:none}
-  .card:hover,.fc:hover,.tm:hover{transform:none;box-shadow:none;border-color:var(--line)}
-  .btn:active{transform:scale(.97)}
-  .card:active{transform:scale(.98)}
-}
+/* ── extra responsive polish ── */
+@media(max-width:620px){.mod:last-child{grid-column:auto}}
+@media(max-width:900px) and (min-width:621px){.plans{grid-template-columns:repeat(2,1fr);max-width:none}.pl:last-child{grid-column:1/-1}}
+@media(max-width:960px) and (min-width:761px){.steps{gap:24px}}
+@media(max-width:760px){.lead input,.lead select,.lead textarea{font-size:16px}}
+@media(max-width:640px){.pills{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;margin-inline:-16px;padding:2px 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.pills::-webkit-scrollbar{display:none}.pill{flex-shrink:0}
+  .hero .ctas .btn{flex:1 1 auto}.trust{gap:10px 20px}.cfg-r ul{max-height:none}}
+@media(max-width:360px){.hero h1{font-size:34px}.head h2{font-size:28px}.btn{padding:0 16px}.mod{padding:20px}.ind{padding:22px 18px}.pl{padding:22px}.seg button{font-size:11.5px}.wrap{padding:0 14px}}
+@media(min-width:1800px){.wrap{max-width:1280px}.stage{max-width:1160px}}
+@media(hover:none){.btn:hover,.tm:hover{transform:none}.mod::after{display:none}.ind .arr{opacity:1;transform:none}}
+@supports(padding:max(0px)){.wrap{padding-left:max(24px,env(safe-area-inset-left));padding-right:max(24px,env(safe-area-inset-right))}}
+@media(max-width:640px){section{padding:76px 0}.wrap{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}.head{margin-bottom:36px}.hero{padding-top:56px}.pills{margin-top:44px}footer{margin-top:76px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 
-<!-- ══ HEADER ══════════════════════════════════════════════════ -->
 <header id="hdr">
   <div class="wrap nav">
-    <a href="#" class="logo">
-      <img src="image.png" alt="Veducore logo" style="height:36px;width:auto;object-fit:contain;display:block">
-    </a>
-
-    <!-- Desktop nav -->
-    <nav aria-label="Main navigation">
+    <a href="#" class="logo" aria-label="Veducore home"><img src="image.png" alt="Veducore"></a>
+    <nav aria-label="Main">
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#plans">Packages</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#platform">Platform</a></li>
+        <li><a href="#build">Build your plan</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
-
-    <a href="#contact" class="btn" style="display:none" id="navCta">Book a demo</a>
-
-    <!-- Hamburger button -->
-    <button class="ham" id="hamBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobNav">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-r">
+      <a href="#contact" class="btn ghost sm">Contact</a>
+      <a href="#contact" class="btn blue sm">Book a demo</a>
+      <button class="ham" id="ham" aria-label="Menu" aria-expanded="false" aria-controls="mob"><span></span></button>
+    </div>
   </div>
-
-  <!-- Mobile drawer -->
-  <nav class="mob-nav" id="mobNav" aria-label="Mobile navigation">
-    <div class="mob-nav-bar">
-      <a href="#" class="logo" onclick="closeMob()">
-        <img src="image.png" alt="Veducore logo" style="height:32px;width:auto;object-fit:contain;display:block">
-      </a>
-      <button class="mob-nav-close" aria-label="Close menu" onclick="closeMob()">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-    </div>
-    <div class="mob-nav-links">
-      <a href="#" onclick="closeMob()">Home</a>
-      <a href="#about" onclick="closeMob()">About</a>
-      <a href="#plans" onclick="closeMob()">Packages</a>
-      <a href="#contact" onclick="closeMob()">Contact</a>
-      <a href="#contact" class="btn" onclick="closeMob()" style="margin-top:24px;padding:12px 32px;font-size:14px;border-radius:10px;width:auto;">Book a demo</a>
-    </div>
+  <nav class="mob" id="mob" aria-label="Mobile">
+    <a href="#industries">Industries</a>
+    <a href="#platform">Platform</a>
+    <a href="#build">Build your plan</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn blue">Book a free demo</a>
   </nav>
 </header>
 
 <main>
 
-<!-- ══ HERO ════════════════════════════════════════════════════ -->
-<div class="wrap hero">
-  <div>
-    <div class="eyebrow">All-in-one School OS</div>
-    <h1>One Technology Kit to <em>grow</em> your academy.</h1>
-    <p>A digital ecosystem to connect, share and manage your institute in a simple way, under your own brand.</p>
-    <div class="row">
-      <a href="#contact" class="btn">Book Your Demo</a>
-      <a href="#tour" class="btn ghost">See it in action</a>
-    </div>
-    <div class="hs">
-      <div><b>10+</b>Institutes</div>
-      <div><b>10K+</b>Students</div>
-      <div><b>99.9%</b>Uptime</div>
-    </div>
-
-    <!-- Static cards for mobile (orbit hidden) -->
-    <div class="ob-static">
-      <div class="ob-card">
-        <div class="ob-icon" style="background:#e6f7f5">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2M8 7V5a2 2 0 0 0-4 0v2"/></svg>
-        </div>
-        <div><h4>ERP</h4><p>Admissions, fees, attendance, HR</p></div>
-      </div>
-      <div class="ob-card">
-        <div class="ob-icon" style="background:#fff4e6">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.8" stroke-linecap="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
-        </div>
-        <div><h4>Growth</h4><p>Leads, marketing &amp; website</p></div>
-      </div>
-      <div class="ob-card">
-        <div class="ob-icon" style="background:#eef2ff">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-        </div>
-        <div><h4>LMS</h4><p>Live classes, courses &amp; assessments</p></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Orbit (desktop only) -->
-  <div class="orb">
-    <div class="sys" id="orbSys">
-      <div class="ring1"></div>
-      <div class="ring2"></div>
-      <div class="ring3"></div>
-      <div class="orb-glow"></div>
-      <div class="orb-core">
-        <img src="image.png" alt="Veducore" style="width:80px;height:auto;object-fit:contain;display:block;margin:0 auto">
-      </div>
-      <!-- ERP -->
-      <div class="ob-card ob-erp">
-        <div class="ob-icon" style="background:#e6f7f5">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2M8 7V5a2 2 0 0 0-4 0v2"/></svg>
-        </div>
-        <div><h4>ERP</h4><p>Admissions, fees, attendance, HR</p></div>
-      </div>
-      <!-- Growth -->
-      <div class="ob-card ob-growth">
-        <div class="ob-icon" style="background:#fff4e6">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.8" stroke-linecap="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
-        </div>
-        <div><h4>Growth</h4><p>Leads, marketing &amp; website</p></div>
-      </div>
-      <!-- LMS -->
-      <div class="ob-card ob-lms">
-        <div class="ob-icon" style="background:#eef2ff">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="1.8" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h6M9 11h4"/></svg>
-        </div>
-        <div><h4>LMS</h4><p>Live classes, courses &amp; assessments</p></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══ PRODUCT TOUR ════════════════════════════════════════════ -->
-<section id="tour" class="tight">
+<!-- HERO -->
+<section class="hero" style="padding-bottom:0">
   <div class="wrap">
-    <div class="head ctr rv">
-      <div class="eyebrow">See it live</div>
-      <h2>Launch your own eLearning platform.</h2>
-      <p>Fulfil the needs of current students and attract new ones.</p>
+    <span class="eyebrow"><i>✦</i>One platform · Every industry</span>
+    <h1>The operating system for<br>
+      <span class="rot" id="rot" aria-live="polite">
+        <span class="on">schools</span><span>clinics</span><span>retail stores</span><span>restaurants</span><span>gyms</span><span>real estate</span><span>agencies</span><span>factories</span>
+      </span>
+    </h1>
+    <p class="lead">ERP, CRM, billing, HR, inventory, analytics and your own branded app — configured for how <em>your</em> business actually works. One login. Zero spreadsheets.</p>
+    <div class="ctas">
+      <a href="#contact" class="btn blue">Book a free demo <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#build" class="btn ghost">Build your plan</a>
     </div>
-    <div class="tour rv">
-      <!-- Video will be added later -->
-      <div style="display:flex;flex-direction:column;align-items:center;gap:18px;color:#fff">
-        <div style="width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.35);display:grid;place-items:center;animation:pulse 2s infinite">
-          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="3" width="20" height="14" rx="2.5"/>
-            <path d="M8 21h8M12 17v4"/>
-            <polygon points="10 8 16 11 10 14 10 8" fill="#fff" stroke="none"/>
-          </svg>
-        </div>
-        <div style="text-align:center">
-          <p style="font-size:16px;font-weight:600;margin:0;opacity:1">Product Demo Video</p>
-          <p style="font-size:13px;opacity:.7;margin:4px 0 0">Coming soon · Full walkthrough of the platform</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ FEATURES ════════════════════════════════════════════════ -->
-<section id="features" class="tight">
-  <div class="wrap">
-    <div class="hrow">
-      <div class="head rv">
-        <div class="eyebrow">Why institutes choose us</div>
-        <h2>Advanced features for next-level learning.</h2>
-        <p>Scalable tools to empower educators, engage students and grow your institute.</p>
-      </div>
-    </div>
-  </div>
-  <!-- full-bleed marquee outside wrap so it goes edge-to-edge -->
-  <div class="fc-mq-wrap rv">
-    <div class="fc-mq-track">
-      <!-- set 1 -->
-      <article class="fc">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        <h3>100% White Label</h3><p>Your own branded mobile app and website with the LMS built in.</p>
-      </article>
-      <article class="fc">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg>
-        <h3>Live Classes &amp; Video on Demand</h3><p>Teach live or share recorded lectures with quizzes and assignments.</p>
-      </article>
-      <article class="fc">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
-        <h3>Online Exam Proctoring</h3><p>Run cheat-resistant exams with AI-based proctoring that monitors every attempt.</p>
-      </article>
-      <article class="fc">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
-        <h3>Detailed Student Reporting</h3><p>Track registrations, courses created and courses sold to understand your growth.</p>
-      </article>
-      <article class="fc">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-4 3-6 7-6s7 2 7 6M17 5l2 2 3-3"/></svg>
-        <h3>Integrated Leads Management</h3><p>Collect leads from ads and listing sites, assign them and follow up on time.</p>
-      </article>
-      <article class="fc">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
-        <h3>Dedicated Account Manager</h3><p>A named manager guides your onboarding, data migration and staff training.</p>
-      </article>
-      <!-- set 2 — duplicate for seamless loop -->
-      <article class="fc">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        <h3>100% White Label</h3><p>Your own branded mobile app and website with the LMS built in.</p>
-      </article>
-      <article class="fc">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg>
-        <h3>Live Classes &amp; Video on Demand</h3><p>Teach live or share recorded lectures with quizzes and assignments.</p>
-      </article>
-      <article class="fc">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
-        <h3>Online Exam Proctoring</h3><p>Run cheat-resistant exams with AI-based proctoring that monitors every attempt.</p>
-      </article>
-      <article class="fc">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
-        <h3>Detailed Student Reporting</h3><p>Track registrations, courses created and courses sold to understand your growth.</p>
-      </article>
-      <article class="fc">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-4 3-6 7-6s7 2 7 6M17 5l2 2 3-3"/></svg>
-        <h3>Integrated Leads Management</h3><p>Collect leads from ads and listing sites, assign them and follow up on time.</p>
-      </article>
-      <article class="fc">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
-        <h3>Dedicated Account Manager</h3><p>A named manager guides your onboarding, data migration and staff training.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ══ PLANS ═══════════════════════════════════════════════════ -->
-<section id="plans" class="tight">
-  <div class="wrap plans">
-    <div class="head ctr rv">
-      <div class="eyebrow">Plans</div>
-      <h2>Plans &amp; packages.</h2>
-      <p>Choose the perfect plan for your educational needs.</p>
+    <div class="trust">
+      <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>100% white-label</span>
+      <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Web, Android &amp; iOS</span>
+      <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Dedicated onboarding</span>
     </div>
 
-    <!-- ── Desktop: 3-col grid (hidden on mobile) ── -->
-    <div class="three plans-desktop">
-      <!-- Basic -->
-      <div class="card pl plan-basic rv">
-        <span class="plan-tag">Starter</span>
-        <h3>Basic</h3><p>For tutors and new academies</p>
-        <ul>
-          <li><span>Students enrolment limit</span><b>&lt; 50</b></li>
-          <li><span>Mobile App</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Admin &amp; Faculty Panel</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Website</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Live Class</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Video on Demand</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Online Test</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Complete ERP Package</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>24x7 Support</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-        </ul>
-        <a href="#contact" class="plan-btn">Book Your Demo</a>
-      </div>
-      <!-- Standard -->
-      <div class="card pl plan-standard rv">
-        <span class="plan-tag">⭐ Most Popular</span>
-        <h3>Standard</h3><p>For growing institutes</p>
-        <ul>
-          <li><span>Students enrolment limit</span><b>50 – 1000</b></li>
-          <li><span>Mobile App</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Admin &amp; Faculty Panel</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Website</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Live Class</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Video on Demand</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Online Test</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Complete ERP Package</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>24x7 Support</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-        </ul>
-        <a href="#contact" class="plan-btn">Book Your Demo</a>
-      </div>
-      <!-- Premium -->
-      <div class="card pl plan-premium rv">
-        <span class="plan-tag">🏆 Premium</span>
-        <h3>Premium</h3><p>For large schools &amp; colleges</p>
-        <ul>
-          <li><span>Students enrolment limit</span><b>1000+</b></li>
-          <li><span>Mobile App</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Admin &amp; Faculty Panel</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Website</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Live Class</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Video on Demand</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Online Test</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>Complete ERP Package</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-          <li><span>24x7 Support</span><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></li>
-        </ul>
-        <a href="#contact" class="plan-btn">Book Your Demo</a>
+    <!-- industry switcher -->
+    <div class="pills" id="pills" role="tablist" aria-label="Choose an industry"></div>
+
+    <div class="stage">
+
+      <div class="dash" aria-label="Product preview">
+        <div class="dbar"><i></i><i></i><i></i><div class="url" id="dUrl">app.yourbrand.in</div></div>
+        <div class="dbody">
+          <aside class="dside">
+            <div class="dorg"><b id="dInit">S</b><div id="dOrg">Your Business<small>Admin</small></div></div>
+            <ul class="dnav" id="dNav"></ul>
+          </aside>
+          <div class="dmain fade" id="dMain">
+            <div class="dtop"><h4 id="dTitle">Overview<small>Sample data</small></h4><span class="dtag">Live</span></div>
+            <div class="kpis" id="dKpis"></div>
+            <div class="dgrid">
+              <div class="panel"><h5><span id="dChartT">This week</span><span id="dChartV" style="color:var(--ink);font-weight:600"></span></h5><div class="chart" id="dChart"></div></div>
+              <div class="panel feedp"><h5>Recent activity</h5><ul class="feed" id="dFeed"></ul></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- ── Mobile: Accordion (hidden on desktop) ── -->
-    <div class="plan-accordion">
-
-      <!-- Basic -->
-      <div class="pac-item pac-basic" id="pac-basic">
-        <div class="pac-header" onclick="togglePac('pac-basic')">
-          <div class="pac-header-left">
-            <span class="pac-badge">Starter</span>
-            <span class="pac-title">Basic</span>
-          </div>
-          <div class="pac-arrow">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0F4340" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-        </div>
-        <div class="pac-body">
-          <div class="pac-inner">
-            <p class="pac-sub">For tutors and new academies</p>
-            <ul class="pac-list">
-              <li><span>Students enrolment limit</span><b>&lt; 50</b></li>
-              <li><span>Mobile App</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Admin &amp; Faculty Panel</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Website</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Live Class</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Video on Demand</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Online Test</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Complete ERP Package</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>24x7 Support</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-            </ul>
-            <a href="#contact" class="pac-btn">Book Your Demo</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Standard -->
-      <div class="pac-item pac-standard open" id="pac-standard">
-        <div class="pac-header" onclick="togglePac('pac-standard')">
-          <div class="pac-header-left">
-            <span class="pac-badge">⭐ Most Popular</span>
-            <span class="pac-title">Standard</span>
-          </div>
-          <div class="pac-arrow">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-        </div>
-        <div class="pac-body">
-          <div class="pac-inner">
-            <p class="pac-sub">For growing institutes</p>
-            <ul class="pac-list">
-              <li><span>Students enrolment limit</span><b>50 – 1000</b></li>
-              <li><span>Mobile App</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Admin &amp; Faculty Panel</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Website</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Live Class</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Video on Demand</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Online Test</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Complete ERP Package</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>24x7 Support</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-            </ul>
-            <a href="#contact" class="pac-btn">Book Your Demo</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Premium -->
-      <div class="pac-item pac-premium" id="pac-premium">
-        <div class="pac-header" onclick="togglePac('pac-premium')">
-          <div class="pac-header-left">
-            <span class="pac-badge">🏆 Premium</span>
-            <span class="pac-title">Premium</span>
-          </div>
-          <div class="pac-arrow">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7C2D12" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-        </div>
-        <div class="pac-body">
-          <div class="pac-inner">
-            <p class="pac-sub">For large schools &amp; colleges</p>
-            <ul class="pac-list">
-              <li><span>Students enrolment limit</span><b>1000+</b></li>
-              <li><span>Mobile App</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Admin &amp; Faculty Panel</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Website</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Live Class</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Video on Demand</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Online Test</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>Complete ERP Package</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-              <li><span>24x7 Support</span><span class="pac-ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg></span></li>
-            </ul>
-            <a href="#contact" class="pac-btn">Book Your Demo</a>
-          </div>
-        </div>
-      </div>
 
     </div>
   </div>
 </section>
 
-<!-- ══ FEATURE MARQUEE ════════════════════════════════════════ -->
-<div class="feat-mq-wrap">
-  <!-- Row 1 — forward -->
-  <div class="feat-mq-track fwd">
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>100% White Label</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" stroke-linecap="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg>Live Classes</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e11d6a" stroke-width="2" stroke-linecap="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg>AI Proctoring</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Student Analytics</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-4 3-6 7-6s7 2 7 6M17 5l2 2 3-3"/></svg>Lead Management</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Video on Demand</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2M8 7V5a2 2 0 0 0-4 0v2"/></svg>Complete ERP</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" stroke-linecap="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/></svg>Growth Tools</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>Dedicated Support</span>
-    <!-- duplicate for seamless loop -->
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>100% White Label</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" stroke-linecap="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg>Live Classes</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e11d6a" stroke-width="2" stroke-linecap="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg>AI Proctoring</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Student Analytics</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-4 3-6 7-6s7 2 7 6M17 5l2 2 3-3"/></svg>Lead Management</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Video on Demand</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2M8 7V5a2 2 0 0 0-4 0v2"/></svg>Complete ERP</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" stroke-linecap="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/></svg>Growth Tools</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>Dedicated Support</span>
-  </div>
-  <!-- Row 2 — reverse -->
-  <div class="feat-mq-track rev" style="margin-top:12px">
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e11d6a" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>Mobile App</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Secure Platform</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24×7 Support</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>Admin Panel</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Online Tests</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Doubt Forum</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Custom Branding</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" stroke-linecap="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>Fee Management</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e11d6a" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Attendance</span>
-    <!-- duplicate for seamless loop -->
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e11d6a" stroke-width="2" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>Mobile App</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Secure Platform</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24×7 Support</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>Admin Panel</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Online Tests</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Doubt Forum</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Custom Branding</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" stroke-linecap="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>Fee Management</span>
-    <span class="fmi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e11d6a" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Attendance</span>
-  </div>
-</div>
-
-<!-- ══ ABOUT ═══════════════════════════════════════════════════ -->
-<section id="about" class="tight">
+<!-- INDUSTRIES -->
+<section id="industries">
   <div class="wrap">
     <div class="head rv">
-      <div class="eyebrow">Why Veducore</div>
-      <h2>The challenges we set out to solve.</h2>
+      <span class="eyebrow"><i>01</i>Industries</span>
+      <h2>Built for your field, <em class="s">not</em> a generic template.</h2>
+      <p>Every industry gets its own workflows, terminology and reports out of the box. Pick yours — we'll set up the rest.</p>
     </div>
-    <div class="three">
-      <div class="card rv"><span class="num">01 · Digitisation</span><h3>Schools deserve modern infrastructure.</h3><p>Tutors and institutes still juggle registers, spreadsheets and disconnected tools, which slows growth and burns out staff.</p></div>
-      <div class="card rv"><span class="num">02 · Partnership</span><h3>You need a partner, not a one-time vendor.</h3><p>We stay after onboarding with training, support and continuous upgrades that grow with you.</p></div>
-      <div class="card rv"><span class="num">03 · Simplicity</span><h3>Powerful should still feel effortless.</h3><p>Principals, teachers and parents shouldn't need a manual. Every workflow is calm, clear and human.</p></div>
-    </div>
+    <div class="ind-grid" id="indGrid"></div>
   </div>
 </section>
 
-<!-- ══ TEAM ════════════════════════════════════════════════════ -->
-<section id="team" class="tight">
+<!-- PLATFORM -->
+<section id="platform" class="bg2">
   <div class="wrap">
     <div class="head ctr rv">
-      <div class="eyebrow">The team</div>
-      <h2>Our team.</h2>
-      <p>Meet the people behind Veducore.</p>
+      <span class="eyebrow"><i>02</i>Platform</span>
+      <h2>Everything you need. <em class="s">Nothing</em> you don't.</h2>
+      <p>One shared core that powers every industry. Turn modules on as you grow — your data stays connected.</p>
     </div>
-    <div class="tms">
-      <div class="tm rv"><div class="av" style="background:none;overflow:hidden;padding:0"><img src="vikash.jpeg" alt="Vikash Dixit" style="width:100%;height:100%;object-fit:cover;border-radius:50%"></div><h3>Vikash Dixit</h3><p>Co-Founder &amp; CEO</p></div>
-      <div class="tm rv"><div class="av" style="background:none;overflow:hidden;padding:0"><img src="pawan.jpeg" alt="Pawan Singh" style="width:100%;height:100%;object-fit:cover;border-radius:50%"></div><h3>Pawan Singh</h3><p>Co-Founder &amp; COO</p></div>
-      <div class="tm rv"><div class="av" style="background:none;overflow:hidden;padding:0"><img src="aryan.jpeg" alt="Aryan Singh Thakur" style="width:100%;height:100%;object-fit:cover;border-radius:50%"></div><h3>Aryan Singh Thakur</h3><p>Co-Founder &amp; CTO</p></div>
+
+    <div class="bento">
+      <div class="mod w3 rv">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 15h3"/></svg>Billing &amp; GST invoicing</h3>
+        <p>Create invoices in seconds, collect online, send automatic reminders and track every rupee.</p>
+        <div class="vis mini-tbl">
+          <div><b>INV-1042 · Sharma Traders</b><span class="st p">Paid</span></div>
+          <div><b>INV-1043 · Green Valley School</b><span class="st d">Due in 3d</span></div>
+          <div><b>INV-1044 · City Care Clinic</b><span class="st p">Paid</span></div>
+        </div>
+      </div>
+      <div class="mod w3 rv">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-4 3-6 7-6s7 2 7 6M17 5l2 2 3-3"/></svg>CRM &amp; lead management</h3>
+        <p>Capture leads from ads, website and walk-ins. Assign, follow up and convert — nothing slips.</p>
+        <div class="vis"><svg class="spark" viewBox="0 0 300 70" preserveAspectRatio="none"><defs><linearGradient id="g1" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#2563eb" stop-opacity=".18"/><stop offset="1" stop-color="#2563eb" stop-opacity="0"/></linearGradient></defs><path d="M0 60 L30 52 L60 55 L90 40 L120 44 L150 30 L180 34 L210 20 L240 24 L270 10 L300 6 L300 70 L0 70Z" fill="url(#g1)"/><path id="sparkLine" d="M0 60 L30 52 L60 55 L90 40 L120 44 L150 30 L180 34 L210 20 L240 24 L270 10 L300 6" fill="none" stroke="#2563eb" stroke-width="2" vector-effect="non-scaling-stroke"/></svg></div>
+      </div>
+      <div class="mod rv">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>WhatsApp &amp; SMS automation</h3>
+        <p>Reminders, receipts and updates sent automatically.</p>
+        <div class="vis chat"><div>Hi Riya, your payment of ₹2,500 is due tomorrow.</div><div class="me">Paid ✅ thanks!</div></div>
+      </div>
+      <div class="mod rv">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>Your own branded app</h3>
+        <p>Your logo, your colours, on Play Store &amp; App Store.</p>
+        <div class="vis" style="overflow:hidden;padding-top:4px"><div class="phone"><i></i><i></i><i style="width:70%"></i><div class="g"><i></i><i></i><i></i><i></i></div></div></div>
+      </div>
+      <div class="mod rv">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>Roles &amp; permissions</h3>
+        <p>Give every team member exactly the access they need.</p>
+        <div class="vis toggle-list">
+          <div class="tg">Manager · Reports<span class="sw on"></span></div>
+          <div class="tg">Staff · Billing<span class="sw on"></span></div>
+          <div class="tg">Staff · Delete records<span class="sw"></span></div>
+        </div>
+      </div>
+      <div class="mod w3 rv">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>HR, attendance &amp; payroll</h3>
+        <p>Staff records, biometric or app attendance, leave and one-click salary slips.</p>
+      </div>
+      <div class="mod w3 rv">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Inventory &amp; analytics</h3>
+        <p>Live stock, low-stock alerts, purchase orders and dashboards that show what's working.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ══ CONTACT / CTA ══════════════════════════════════════════ -->
-<section id="contact" class="tight">
+<!-- HOW IT WORKS -->
+<section>
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow"><i>03</i>How it works</span>
+      <h2>Live in days, <em class="s">not</em> months.</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><i class="bar"></i><h3>Tell us how you work</h3><p>A 20-minute call to understand your workflows, team and the tools you use today.</p></div>
+      <div class="step rv"><i class="bar"></i><h3>We configure &amp; migrate</h3><p>Your dedicated manager sets up modules, imports your data and brands your app.</p></div>
+      <div class="step rv"><i class="bar"></i><h3>Go live with your team</h3><p>Hands-on training for staff, and ongoing support as you grow.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONFIGURATOR -->
+<section id="build" class="bg2">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow"><i>04</i>Build your plan</span>
+      <h2>Pick what you need. <em class="s">See</em> your setup.</h2>
+      <p>Choose your industry, team size and modules — we'll recommend the right plan and send it straight to our team.</p>
+    </div>
+    <div class="cfg">
+      <div class="cfg-l rv">
+        <div class="grp"><h4><b>1</b>Your industry</h4><div class="chips" id="cIndustry"></div></div>
+        <div class="grp"><h4><b>2</b>Team size</h4>
+          <div class="seg" id="cSize"><span class="thumb"></span><button class="on" data-v="0">Up to 100</button><button data-v="1">101–300</button><button data-v="2">301–500</button><button data-v="3">500+</button></div>
+        </div>
+        <div class="grp"><h4><b>3</b>Modules</h4><div class="chips" id="cMods"></div></div>
+      </div>
+      <div class="cfg-r rv">
+        <small>Recommended plan</small>
+        <div class="plan" id="rPlan">Starter</div>
+        <div class="plan-d" id="rDesc">For small teams getting started</div>
+        <div class="meter"><i id="rMeter" style="width:20%"></i></div>
+        <ul id="rList"></ul>
+        <a href="#contact" class="btn" id="rBtn">Get this setup <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="head ctr rv">
+      <span class="eyebrow"><i>05</i>Pricing</span>
+      <h2>Simple plans that <em class="s">grow</em> with you.</h2>
+      <p>Every plan includes the core platform, mobile app and support. Pricing depends on your modules and team size.</p>
+    </div>
+    <div class="plans">
+      <div class="pl rv">
+        <h3>Starter</h3><div class="who">For small teams &amp; new businesses</div>
+        <div class="price">Custom <small>· up to 300 users</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Up to 5 modules</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Branded web &amp; mobile app</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Billing, CRM &amp; reports</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Email &amp; WhatsApp support</li>
+        </ul>
+        <a href="#contact" class="btn ghost" data-plan="Starter">Book a demo</a>
+      </div>
+      <div class="pl hot rv">
+        <h3>Growth</h3><div class="who">For growing teams &amp; multiple branches</div>
+        <div class="price">Custom <small>· up to 500 users</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Everything in Starter</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Unlimited modules</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>HR, payroll &amp; inventory</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>WhatsApp &amp; SMS automation</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Dedicated account manager</li>
+        </ul>
+        <a href="#contact" class="btn blue" data-plan="Growth">Book a demo</a>
+      </div>
+      <div class="pl rv">
+        <h3>Enterprise</h3><div class="who">For large organisations</div>
+        <div class="price">Custom <small>· 500+ users</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Everything in Growth</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Custom workflows &amp; integrations</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Multi-location dashboards</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m5 12 5 5 9-10"/></svg>Priority 24×7 support</li>
+        </ul>
+        <a href="#contact" class="btn ghost" data-plan="Enterprise">Talk to sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="bg2">
+  <div class="wrap">
+    <div class="head ctr rv">
+      <span class="eyebrow"><i>06</i>FAQ</span>
+      <h2>Questions, <em class="s">answered</em>.</h2>
+    </div>
+    <div class="faq rv" id="faqList">
+      <div class="qa"><button>Can Veducore work for my specific business?<i></i></button><div class="a"><div><p>Yes. The core platform (billing, CRM, HR, inventory, analytics, app) is shared, and on top of it we configure industry-specific workflows — admissions for schools, appointments for clinics, memberships for gyms, and so on. If your workflow is unique, we customise it.</p></div></div></div>
+      <div class="qa"><button>Will the app carry my brand?<i></i></button><div class="a"><div><p>It's 100% white-label. Your name, logo and colours on your website, web dashboard and mobile app — your customers never see "Veducore".</p></div></div></div>
+      <div class="qa"><button>How long does setup take?<i></i></button><div class="a"><div><p>Most businesses go live within days. Your dedicated manager handles configuration, data migration from Excel or your old software, and staff training.</p></div></div></div>
+      <div class="qa"><button>Is my data safe?<i></i></button><div class="a"><div><p>Your data is encrypted, backed up regularly, and protected by role-based access so every team member sees only what they should. You own your data and can export it anytime.</p></div></div></div>
+      <div class="qa"><button>Can I start small and add modules later?<i></i></button><div class="a"><div><p>Absolutely. Start with the modules you need today and switch on more as you grow — everything stays connected, with no re-entry of data.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="wrap">
+    <div class="head ctr rv">
+      <span class="eyebrow"><i>07</i>Team</span>
+      <h2>The people behind <em class="s">Veducore</em>.</h2>
+    </div>
+    <div class="tms">
+      <div class="tm rv"><img src="vikash.jpeg" alt="Vikash Dixit"><h3>Vikash Dixit</h3><p>Co-Founder &amp; CEO</p></div>
+      <div class="tm rv"><img src="pawan.jpeg" alt="Pawan Singh"><h3>Pawan Singh</h3><p>Co-Founder &amp; COO</p></div>
+      <div class="tm rv"><img src="aryan.jpeg" alt="Aryan Singh Thakur"><h3>Aryan Singh Thakur</h3><p>Co-Founder &amp; CTO</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding-top:0;padding-bottom:0">
   <div class="wrap">
     <div class="cta rv">
       <div>
-        <div class="eyebrow">Ready when you are</div>
-        <h2>Ready to transform your school?</h2>
-        <p>See how Veducore can replace 6 disconnected tools with one calm, modern platform, in a 20-minute personalised walkthrough.</p>
+        <span class="eyebrow"><i>✦</i>Free demo</span>
+        <h2 style="margin-top:18px">See Veducore running <em class="s">your</em> business.</h2>
+        <p>A personalised 20-minute walkthrough, set up for your industry. No commitment.</p>
+        <div class="contact-lines">
+          <a href="tel:+916388795644"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.97-.98a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg>+91 63887 95644</a>
+          <a href="mailto:veducoree@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>veducoree@gmail.com</a>
+          <a href="https://wa.me/916388795644"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Chat on WhatsApp</a>
+        </div>
       </div>
       <form class="lead" id="demoForm">
-        <input required placeholder="Your name" name="name" autocomplete="name">
-        <input required placeholder="Phone number" name="phone" inputmode="tel" autocomplete="tel">
-        <input placeholder="Institute name" name="institute">
-        <button class="btn" type="submit" id="demoBtn" style="background:#ff6b35;border-color:#ff6b35;color:#fff;padding:14px">
-          Book your free demo
-        </button>
-        <div id="formMsg" style="display:none;background:rgba(255,255,255,.15);border-radius:10px;padding:14px 16px;color:#fff;font-weight:600;font-size:15px;text-align:center">
-          ✅ Thanks! We will call you soon.
+        <div class="two">
+          <input required placeholder="Your name" name="name" autocomplete="name">
+          <input required placeholder="Phone number" name="phone" inputmode="tel" autocomplete="tel">
+        </div>
+        <input placeholder="Business / organisation name" name="business" autocomplete="organization">
+        <select name="industry" id="fIndustry" aria-label="Industry"><option value="">Select your industry</option></select>
+        <textarea name="message" id="fMsg" placeholder="What would you like to manage with Veducore? (optional)"></textarea>
+        <input type="hidden" name="plan" id="fPlan">
+        <button class="btn blue" type="submit" id="demoBtn">Book my free demo</button>
+        <div id="formMsg">
+          <b>✅ Thanks! We've got your details.</b>
+          <span>Your message is ready in WhatsApp — just tap <strong>Send</strong> so we can reply faster.</span>
+          <a href="https://wa.me/916388795644" id="waBtn" class="wa-btn" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.003 0C5.376 0 0 5.373 0 11.998c0 2.117.554 4.1 1.522 5.823L.054 23.27a.75.75 0 0 0 .92.92l5.45-1.469A11.95 11.95 0 0 0 12.003 24C18.629 24 24 18.626 24 11.998 24 5.373 18.629 0 12.003 0zm0 21.998a9.948 9.948 0 0 1-5.071-1.383l-.364-.216-3.232.872.872-3.233-.216-.363A9.944 9.944 0 0 1 2.002 12C2.002 6.476 6.48 2 12.003 2s10 4.476 10 9.998c0 5.523-4.478 9.999-10 9.999z"/></svg>Open WhatsApp</a>
         </div>
       </form>
     </div>
@@ -1295,202 +677,301 @@ img,svg,video{max-width:100%;height:auto}
 
 </main>
 
-<!-- ══ FOOTER ══════════════════════════════════════════════════ -->
 <footer>
   <div class="wrap">
-    <div class="foot-brand">
-      <a href="#" class="logo" style="margin-bottom:14px">
-        <img src="image.png" alt="Veducore logo" style="height:36px;width:auto;object-fit:contain;display:block">
-      </a>
-      <p>All-in-one School OS — ERP, LMS and growth tools for institutes that want to operate with clarity, speed and confidence.</p>
-      <div class="soc">
-        <a href="#" aria-label="Facebook" title="Facebook">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-        </a>
-        <a href="#" aria-label="X / Twitter" title="X">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        </a>
-        <a href="#" aria-label="LinkedIn" title="LinkedIn">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
-        <a href="#" aria-label="Instagram" title="Instagram">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        </a>
-        <a href="https://wa.me/916388795644" aria-label="WhatsApp" title="WhatsApp">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.003 0C5.376 0 0 5.373 0 11.998c0 2.117.554 4.1 1.522 5.823L.054 23.27a.75.75 0 0 0 .92.92l5.45-1.469A11.95 11.95 0 0 0 12.003 24C18.629 24 24 18.626 24 11.998 24 5.373 18.629 0 12.003 0zm0 21.998a9.948 9.948 0 0 1-5.071-1.383l-.364-.216-3.232.872.872-3.233-.216-.363A9.944 9.944 0 0 1 2.002 12C2.002 6.476 6.48 2 12.003 2s10 4.476 10 9.998c0 5.523-4.478 9.999-10 9.999z"/></svg>
-        </a>
-      </div>
-    </div>
-    <div class="footer-bottom-cols">
+    <div class="fgrid">
       <div>
-        <h5>Quick Links</h5>
-        <a href="#">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#features">Features</a>
-        <a href="#plans">Pricing</a>
-        <a href="#team">Team</a>
-        <a href="#contact">Contact Us</a>
-      </div>
-      <div>
-        <h5>Legal</h5>
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="refund-policy.html">Refund Policy</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
-        <div style="margin-top:20px">
-          <h5>Get in touch</h5>
-          <p style="line-height:2;font-size:14px;margin:0">
-            <a href="tel:+916388795644" style="display:flex;align-items:center;gap:7px">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.97-.98a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
-              +91 63887 95644
-            </a>
-            <a href="mailto:veducore@gmail.com" style="display:flex;align-items:center;gap:7px">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              veducore@gmail.com
-            </a>
-          </p>
+        <a href="#" class="logo"><img src="image.png" alt="Veducore" style="height:32px"></a>
+        <p>One platform to run any business — ERP, CRM, billing, HR and your own branded app.</p>
+        <div class="soc">
+          <a href="https://wa.me/916388795644" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.003 0C5.376 0 0 5.373 0 11.998c0 2.117.554 4.1 1.522 5.823L.054 23.27a.75.75 0 0 0 .92.92l5.45-1.469A11.95 11.95 0 0 0 12.003 24C18.629 24 24 18.626 24 11.998 24 5.373 18.629 0 12.003 0zm0 21.998a9.948 9.948 0 0 1-5.071-1.383l-.364-.216-3.232.872.872-3.233-.216-.363A9.944 9.944 0 0 1 2.002 12C2.002 6.476 6.48 2 12.003 2s10 4.476 10 9.998c0 5.523-4.478 9.999-10 9.999z"/></svg></a>
+          <a href="https://www.facebook.com/people/Veducore/61595406585639/" aria-label="Facebook" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://www.instagram.com/veducore_/" aria-label="Instagram" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
         </div>
       </div>
+      <div><h5>Product</h5><a href="#platform">Platform</a><a href="#build">Build your plan</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
+      <div><h5>Industries</h5><div id="fInd"></div></div>
+      <div><h5>Company</h5><a href="#team">Team</a><a href="#contact">Contact</a><a href="privacy-policy.html">Privacy Policy</a><a href="refund-policy.html">Refund Policy</a><a href="terms.html">Terms &amp; Conditions</a></div>
     </div>
-  </div>
-  <div class="foot-copy">
-    <span>© 2026 Veducore. All rights reserved.</span>
-    <span style="margin:0 10px;opacity:.4">·</span>
-    <span>Built with care for schools, by educators.</span>
+    <div class="fbot"><span>© 2026 Veducore. All rights reserved.</span><span>Made in India, for businesses everywhere.</span></div>
   </div>
 </footer>
 
 <script>
-// ── Nav CTA visibility ─────────────────────────────────────────
 (function(){
-  var cta = document.getElementById('navCta');
-  var ham = document.getElementById('hamBtn');
-  function check(){
-    var mobile = window.innerWidth <= 760;
-    cta.style.display = mobile ? 'none' : 'inline-flex';
-    ham.style.display  = mobile ? 'flex'  : 'none';
-  }
-  check();
-  window.addEventListener('resize', check);
-})();
+var ICON = {
+  education:'<path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/>',
+  healthcare:'<path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/><path d="M12 9v6M9 12h6"/>',
+  retail:'<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/>',
+  restaurant:'<path d="M3 2v7c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2V2M6 2v20M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/>',
+  fitness:'<path d="M6.5 6.5h11M6.5 17.5h11M3 9v6M21 9v6M6.5 4v16M17.5 4v16"/>',
+  realestate:'<path d="M3 9.5 12 3l9 6.5V21H3z"/><path d="M9 21v-7h6v7"/>',
+  services:'<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>',
+  manufacturing:'<path d="M2 20V8l6 4V8l6 4V4h8v16z"/><path d="M6 16h2M11 16h2M16 16h2"/>'
+};
+var D = {
+  education:{name:'Education',short:'Schools',sub:'Schools, colleges & coaching institutes',org:'Green Valley School',url:'app.greenvalley.edu.in',
+    mods:['Admissions','Fee management','Attendance','LMS & live classes','Online exams','Parent app','Timetable','Transport'],
+    kpis:[['Fees collected','₹4.2L','+12%'],['Attendance today','94%','+2%'],['Active students','1,248','+38']],
+    chart:{t:'Fee collection',v:'₹4.2L',d:[42,55,48,70,62,80,74]},
+    feed:[['₹','Fee received — Riya S., Class 9','2m'],['✓','Attendance marked — Class 7B','8m'],['✎','Unit test results published','21m'],['+','New admission enquiry','34m']]},
+  healthcare:{name:'Healthcare',short:'Clinics',sub:'Clinics, hospitals & diagnostic labs',org:'City Care Clinic',url:'app.citycare.in',
+    mods:['Appointments','Patient records (EMR)','Billing','Pharmacy','Lab reports','Teleconsult','Doctor schedules','Patient app'],
+    kpis:[['Appointments today','86','+9'],['Revenue','₹1.8L','+7%'],['Avg. wait time','12 min','−4 min']],
+    chart:{t:'Patient visits',v:'512',d:[60,72,58,80,76,90,50]},
+    feed:[['⏱','Appointment booked — Dr. Mehta, 4:30 PM','1m'],['℞','Prescription sent to pharmacy','6m'],['🧪','Lab report ready — CBC','15m'],['₹','Bill paid via UPI','27m']]},
+  retail:{name:'Retail',short:'Retail',sub:'Stores, supermarkets & distributors',org:'Sharma Mart',url:'app.sharmamart.in',
+    mods:['POS billing','Inventory','GST invoicing','Barcode & SKUs','Loyalty points','Suppliers','Multi-store','Purchase orders'],
+    kpis:[['Sales today','₹3.6L','+15%'],['Orders','412','+28'],['Low stock items','7','alert']],
+    chart:{t:'Daily sales',v:'₹21.4L',d:[50,58,66,60,78,92,85]},
+    feed:[['₹','Sale #8821 — ₹1,240','just now'],['📦','Stock low — Basmati rice 5kg','4m'],['🚚','PO received from supplier','18m'],['★','Loyalty points redeemed','30m']]},
+  restaurant:{name:'Restaurants',short:'Restaurants',sub:'Restaurants, cafés & cloud kitchens',org:'The Spice Table',url:'app.spicetable.in',
+    mods:['Table orders','Kitchen display (KOT)','Online orders','Digital menu','Inventory & recipes','Billing','Feedback','Staff shifts'],
+    kpis:[['Orders today','238','+22'],['Revenue','₹96K','+11%'],['Avg. table time','42 min','−6 min']],
+    chart:{t:'Orders',v:'1,486',d:[40,45,52,48,70,95,88]},
+    feed:[['🍽','Table 6 — new order (4 items)','just now'],['🔥','KOT ready — Paneer Tikka','3m'],['🛵','Online order #1192 dispatched','9m'],['★','5-star feedback received','20m']]},
+  fitness:{name:'Fitness',short:'Gyms',sub:'Gyms, yoga studios & sports academies',org:'Iron Pulse Gym',url:'app.ironpulse.in',
+    mods:['Memberships','Check-ins','Trainer schedules','Payments','Diet & workout plans','Member app','Class booking','Renewals'],
+    kpis:[['Check-ins today','312','+18'],['Active members','1,064','+24'],['Renewals due','19','this week']],
+    chart:{t:'Check-ins',v:'2,140',d:[78,70,74,66,72,55,40]},
+    feed:[['✓','Check-in — Arjun K.','just now'],['₹','Membership renewed — 6 months','7m'],['📅','HIIT class full (20/20)','14m'],['🔔','Renewal reminder sent to 19 members','25m']]},
+  realestate:{name:'Real estate',short:'Real estate',sub:'Builders, brokers & property managers',org:'Skyline Builders',url:'app.skyline.in',
+    mods:['Lead CRM','Site visits','Unit inventory','Bookings','Payment plans','Broker portal','Documents','Rent collection'],
+    kpis:[['New leads','64','+16'],['Site visits','23','+5'],['Units booked','8','+2']],
+    chart:{t:'Leads',v:'342',d:[30,44,38,52,60,48,70]},
+    feed:[['+','New lead from website — 3BHK','2m'],['📍','Site visit scheduled — Sat 11 AM','10m'],['✍','Booking confirmed — Tower B, 704','32m'],['₹','Installment received','1h']]},
+  services:{name:'Agencies & services',short:'Agencies',sub:'Agencies, consultancies & service firms',org:'Pixel Works',url:'app.pixelworks.in',
+    mods:['Projects & tasks','Timesheets','Invoicing','Client portal','CRM','HR & payroll','Proposals','Expenses'],
+    kpis:[['Billable hours','186h','+12%'],['Invoices due','₹2.4L','5 clients'],['Projects active','14','+2']],
+    chart:{t:'Hours logged',v:'186h',d:[30,34,32,36,28,8,4]},
+    feed:[['✓','Task done — Homepage redesign','3m'],['⏱','6.5h logged by Neha','12m'],['₹','Invoice INV-221 paid','40m'],['✉','Proposal viewed by client','1h']]},
+  manufacturing:{name:'Manufacturing',short:'Factories',sub:'Factories, workshops & production units',org:'Apex Industries',url:'app.apexind.in',
+    mods:['Production planning','Raw materials','Bill of materials','Quality checks','Dispatch','Vendors','Workforce','Maintenance'],
+    kpis:[['Units produced','4,820','+6%'],['Orders dispatched','37','+4'],['QC pass rate','98.2%','+0.4%']],
+    chart:{t:'Output',v:'31.6K',d:[62,68,70,66,74,72,60]},
+    feed:[['⚙','Batch #442 completed','5m'],['✓','QC passed — Lot 88','11m'],['🚚','Dispatch to Pune — 120 units','26m'],['📦','Raw material reorder raised','45m']]}
+};
+var KEYS = Object.keys(D);
+var DAYS = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+var CORE = ['CRM & leads','Billing & invoicing','HR & payroll','WhatsApp automation','Branded mobile app','Analytics'];
+function svg(k,s){return '<svg width="'+(s||18)+'" height="'+(s||18)+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+ICON[k]+'</svg>'}
+function $(id){return document.getElementById(id)}
 
-// ── Hamburger menu ─────────────────────────────────────────────
-var hamBtn = document.getElementById('hamBtn');
-var mobNav = document.getElementById('mobNav');
-function closeMob(){
-  hamBtn.classList.remove('open');
-  mobNav.classList.remove('open');
-  hamBtn.setAttribute('aria-expanded','false');
-  document.body.style.overflow = '';
-  document.body.style.position = '';
-  document.body.style.width = '';
+/* ── hero word rotator ── */
+var rs = $('rot').children, ri = 0;
+setInterval(function(){
+  var cur = rs[ri]; cur.classList.remove('on'); cur.classList.add('out');
+  setTimeout(function(){cur.classList.remove('out')},600);
+  ri = (ri+1)%rs.length; rs[ri].classList.add('on');
+},2200);
+
+/* ── dashboard ── */
+var pills = $('pills'), cur = 'education', auto = true;
+KEYS.forEach(function(k){
+  var b = document.createElement('button');
+  b.className = 'pill'; b.setAttribute('role','tab'); b.dataset.k = k;
+  b.innerHTML = svg(k,15)+D[k].short;
+  b.onclick = function(){auto=false; show(k)};
+  pills.appendChild(b);
+});
+function show(k, instant){
+  cur = k; var d = D[k];
+  [].forEach.call(pills.children,function(p){var on=p.dataset.k===k;p.classList.toggle('on',on);p.setAttribute('aria-selected',on)});
+  var main = $('dMain');
+  main.classList.add('out');
+  setTimeout(function(){
+    $('dUrl').textContent = d.url;
+    $('dInit').textContent = d.org[0];
+    $('dOrg').innerHTML = d.org+'<small>Admin · '+d.name+'</small>';
+    $('dNav').innerHTML = '<li class="on">Overview</li>'+d.mods.slice(0,7).map(function(m){return '<li>'+m+'</li>'}).join('');
+    $('dKpis').innerHTML = d.kpis.map(function(x){return '<div class="kpi"><small>'+x[0]+'</small><b>'+x[1]+'</b><em>'+x[2]+'</em></div>'}).join('');
+    $('dChartT').textContent = d.chart.t+' · this week';
+    $('dChartV').textContent = d.chart.v;
+    var ch = $('dChart'); ch.innerHTML = '';
+    var mx = Math.max.apply(null,d.chart.d);
+    d.chart.d.forEach(function(v,i){
+      var c = document.createElement('div'); if(v===mx) c.className='hi';
+      c.innerHTML = '<span></span><label>'+DAYS[i]+'</label>';
+      ch.appendChild(c);
+      setTimeout(function(){c.firstChild.style.height = (v/100*82)+'%'},40+i*50);
+    });
+    var f = $('dFeed');
+    f.innerHTML = d.feed.map(function(x){return '<li><i>'+x[0]+'</i><span>'+x[1]+'</span><time>'+x[2]+'</time></li>'}).join('');
+    [].forEach.call(f.children,function(li,i){setTimeout(function(){li.classList.add('in')},150+i*110)});
+    main.classList.remove('out');
+  }, instant?0:220);
 }
-hamBtn.addEventListener('click', function(){
-  var open = mobNav.classList.toggle('open');
-  hamBtn.classList.toggle('open', open);
-  hamBtn.setAttribute('aria-expanded', open);
-  if(open){
-    document.body.style.overflow = 'hidden';
-    document.body.style.position = 'fixed';
-    document.body.style.width = '100%';
-  } else {
-    document.body.style.overflow = '';
-    document.body.style.position = '';
-    document.body.style.width = '';
-  }
+$('dNav').addEventListener('click',function(e){
+  if(e.target.tagName!=='LI') return;
+  [].forEach.call(this.children,function(li){li.classList.remove('on')});
+  e.target.classList.add('on'); auto=false;
+});
+show('education',true);
+var autoT = setInterval(function(){
+  if(!auto) return clearInterval(autoT);
+  show(KEYS[(KEYS.indexOf(cur)+1)%KEYS.length]);
+},4500);
+$('dMain').closest('.stage').addEventListener('mouseenter',function(){auto=false});
+
+/* ── industries grid ── */
+var g = $('indGrid');
+KEYS.forEach(function(k,i){
+  var d = D[k], a = document.createElement('a');
+  a.className='ind rv'; a.href='#build'; a.style.setProperty('--d',(i%4)*.06+'s');
+  a.innerHTML = '<div class="ico">'+svg(k,19)+'</div><svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg><h3>'+d.name+'</h3><p>'+d.sub+'</p><div class="tags">'+d.mods.slice(0,3).map(function(m){return '<span>'+m+'</span>'}).join('')+'</div>';
+  a.onclick = function(){setInd(k)};
+  g.appendChild(a);
+});
+$('fInd').innerHTML = KEYS.map(function(k){return '<a href="#build" data-k="'+k+'">'+D[k].name+'</a>'}).join('');
+$('fInd').addEventListener('click',function(e){var k=e.target.dataset.k;if(k)setInd(k)});
+
+/* ── configurator ── */
+var cfg = {ind:'education', size:0, mods:{}};
+var cI = $('cIndustry'), cM = $('cMods'), fI = $('fIndustry');
+KEYS.forEach(function(k){
+  var b = document.createElement('button'); b.className='chip'; b.dataset.k=k; b.type='button';
+  b.innerHTML = svg(k,14)+D[k].name; b.onclick=function(){setInd(k)}; cI.appendChild(b);
+  var o = document.createElement('option'); o.value=D[k].name; o.textContent=D[k].name; fI.appendChild(o);
+});
+var oo = document.createElement('option'); oo.value='Other'; oo.textContent='Other'; fI.appendChild(oo);
+function setInd(k){
+  cfg.ind = k; cfg.mods = {};
+  D[k].mods.slice(0,3).forEach(function(m){cfg.mods[m]=1});
+  cfg.mods['Billing & invoicing']=1;
+  [].forEach.call(cI.children,function(c){c.classList.toggle('on',c.dataset.k===k)});
+  var all = D[k].mods.concat(CORE);
+  cM.innerHTML = all.map(function(m){return '<button type="button" class="chip'+(cfg.mods[m]?' on':'')+'" data-m="'+m+'"><span class="ck"></span>'+m+'</button>'}).join('');
+  fI.value = D[k].name;
+  render();
+}
+cM.addEventListener('click',function(e){
+  var b = e.target.closest('.chip'); if(!b) return;
+  var m = b.dataset.m;
+  if(cfg.mods[m]) delete cfg.mods[m]; else cfg.mods[m]=1;
+  b.classList.toggle('on'); render();
+});
+var seg = $('cSize'), thumb = seg.querySelector('.thumb');
+seg.addEventListener('click',function(e){
+  var b = e.target.closest('button'); if(!b) return;
+  cfg.size = +b.dataset.v;
+  [].forEach.call(seg.querySelectorAll('button'),function(x){x.classList.toggle('on',x===b)});
+  thumb.style.transform = 'translateX('+(cfg.size*100)+'%)';
+  render();
+});
+var PLANS = [['Starter','For small teams getting started'],['Growth','For growing teams & multiple branches'],['Enterprise','Custom workflows, scale & priority support']];
+function render(){
+  var list = Object.keys(cfg.mods), n = list.length;
+  // Starter: up to 300 users & 5 modules · Growth: up to 500 users · Enterprise: 500+
+  var p = cfg.size>=3 ? 2 : (cfg.size===2 || n>5) ? 1 : 0;
+  $('rPlan').textContent = PLANS[p][0];
+  $('rDesc').textContent = PLANS[p][1];
+  $('rMeter').style.width = Math.min(100, 15 + n*6 + cfg.size*12)+'%';
+  $('rList').innerHTML = n ? list.map(function(m){return '<li>'+m+'</li>'}).join('') : '<li style="opacity:.6">Select at least one module</li>';
+}
+$('rBtn').addEventListener('click',function(){
+  var sizes = ['Up to 100','101–300','301–500','500+'];
+  fI.value = D[cfg.ind].name;
+  $('fPlan').value = $('rPlan').textContent;
+  $('fMsg').value = 'Plan: '+$('rPlan').textContent+' · Team: '+sizes[cfg.size]+' users\nModules: '+Object.keys(cfg.mods).join(', ');
+});
+document.querySelectorAll('[data-plan]').forEach(function(a){a.addEventListener('click',function(){$('fPlan').value=a.dataset.plan})});
+setInd('education');
+
+/* ── bento spotlight + switches ── */
+document.querySelectorAll('.mod').forEach(function(m){
+  m.addEventListener('pointermove',function(e){var r=m.getBoundingClientRect();m.style.setProperty('--mx',e.clientX-r.left+'px');m.style.setProperty('--my',e.clientY-r.top+'px')});
+});
+document.querySelectorAll('.sw').forEach(function(s){s.addEventListener('click',function(){s.classList.toggle('on')})});
+
+/* ── FAQ ── */
+document.querySelectorAll('.qa button').forEach(function(b){
+  b.setAttribute('aria-expanded','false');
+  b.addEventListener('click',function(){
+    var q = b.parentNode, open = !q.classList.contains('open');
+    document.querySelectorAll('.qa').forEach(function(x){x.classList.remove('open');x.querySelector('button').setAttribute('aria-expanded','false')});
+    if(open){q.classList.add('open');b.setAttribute('aria-expanded','true')}
+  });
 });
 
-// ── Feature slider — removed (auto-marquee now) ──────────────
+/* ── nav ── */
+var ham = $('ham'), mob = $('mob');
+function setMob(o){mob.classList.toggle('open',o);ham.classList.toggle('open',o);ham.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''}
+ham.onclick = function(){setMob(!mob.classList.contains('open'))};
+mob.querySelectorAll('a').forEach(function(a){a.onclick=function(){setMob(false)}});
+addEventListener('resize',function(){if(innerWidth>860)setMob(false)});
+var hdr = $('hdr');
+addEventListener('scroll',function(){hdr.classList.toggle('sc',scrollY>8)},{passive:true});
 
-// ── Pricing accordion (mobile) ────────────────────────────────
-function togglePac(id){
-  var item = document.getElementById(id);
-  var isOpen = item.classList.contains('open');
-  // close all
-  document.querySelectorAll('.pac-item').forEach(function(el){el.classList.remove('open')});
-  // open clicked if it was closed
-  if(!isOpen) item.classList.add('open');
+/* ── anchor scrolling: land heading right under the header ── */
+function scrollToId(id, smooth){
+  var sec = document.getElementById(id); if(!sec) return false;
+  var t = (id==='contact') ? sec : (sec.querySelector('.head') || sec);
+  var y = t.getBoundingClientRect().top + window.pageYOffset - hdr.offsetHeight - 24;
+  window.scrollTo({top: Math.max(0,y), behavior: smooth ? 'smooth' : 'auto'});
+  return true;
 }
+document.addEventListener('click',function(e){
+  var a = e.target.closest('a[href^="#"]'); if(!a) return;
+  var id = a.getAttribute('href').slice(1);
+  if(!id){ e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); return; }
+  if(scrollToId(id,true)){ e.preventDefault(); history.replaceState(null,'','#'+id); }
+});
+if(location.hash){ addEventListener('load',function(){ setTimeout(function(){ scrollToId(location.hash.slice(1),false) },50) }); }
 
-// ── Scroll reveal ──────────────────────────────────────────────
+/* ── reveal + counters ── */
 document.documentElement.classList.add('js');
-var io = new IntersectionObserver(function(e){
-  e.forEach(function(x){
-    if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}
+function count(el){
+  var t = parseFloat(el.dataset.count), dec = +(el.dataset.dec||0), suf = el.dataset.suf||'', s = null;
+  function f(ts){if(!s)s=ts;var p=Math.min((ts-s)/1400,1),e=1-Math.pow(1-p,3);el.textContent=(t*e).toFixed(dec)+suf;if(p<1)requestAnimationFrame(f)}
+  requestAnimationFrame(f);
+}
+var io = new IntersectionObserver(function(es){
+  es.forEach(function(x){
+    if(!x.isIntersecting) return;
+    x.target.classList.add('in');
+    x.target.querySelectorAll('[data-count]').forEach(count);
+    io.unobserve(x.target);
   });
-},{threshold:.1});
+},{threshold:.12});
 document.querySelectorAll('.rv').forEach(function(el,i){
-  el.style.setProperty('--d',(i%4)*.08+'s');
+  if(!el.style.getPropertyValue('--d')) el.style.setProperty('--d',(i%3)*.07+'s');
   io.observe(el);
 });
 
-// ── Sticky header shadow ───────────────────────────────────────
-var hdr = document.getElementById('hdr');
-addEventListener('scroll',function(){hdr.classList.toggle('sc',scrollY>10)},{passive:true});
-
-// ── Solar-system orbit (desktop only) ─────────────────────────
-(function(){
-  var sys = document.getElementById('orbSys');
-  if(!sys) return;
-  // Don't run on mobile/tablet
-  var mq = window.matchMedia('(max-width:860px)');
-  if(mq.matches) return;
-
-  var CX = 210, CY = 210, R = 190, SPEED = 0.00022;
-  var TWO_PI = Math.PI * 2;
-  var BASE = Math.PI * 1.4;
-  var cards = [
-    {el: document.querySelector('.ob-erp'),    angle: BASE},
-    {el: document.querySelector('.ob-growth'), angle: BASE + TWO_PI/3},
-    {el: document.querySelector('.ob-lms'),    angle: BASE + 2*TWO_PI/3}
-  ];
-  var W2 = 80, H2 = 32; // half card width/height approx
-  var paused = false, last = null;
-
-  function tick(ts){
-    if(!last) last = ts;
-    var dt = ts - last; last = ts;
-    if(dt < 200){
-      cards.forEach(function(c){
-        c.angle += SPEED * dt;
-        c.el.style.left = (CX + R * Math.cos(c.angle) - W2) + 'px';
-        c.el.style.top  = (CY + R * Math.sin(c.angle) - H2) + 'px';
-      });
-    }
-    requestAnimationFrame(tick);
-  }
-  requestAnimationFrame(tick);
-})();
-
-// ── Demo form AJAX — no Formspree redirect ─────────────────────
-(function(){
-  var form = document.getElementById('demoForm');
-  if(!form) return;
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    var btn  = document.getElementById('demoBtn');
-    var msg  = document.getElementById('formMsg');
-    btn.disabled = true;
-    btn.textContent = 'Sending…';
-    fetch('https://formspree.io/f/xljgdjwr', {
-      method: 'POST',
-      body: new FormData(form),
-      headers: {'Accept': 'application/json'}
-    }).then(function(r){
-      if(r.ok){
-        form.querySelectorAll('input').forEach(function(i){ i.style.display = 'none'; });
-        btn.style.display = 'none';
-        msg.style.display = 'block';
-      } else {
-        btn.disabled = false;
-        btn.textContent = 'Book your free demo';
-        alert('Something went wrong. Please try again.');
-      }
-    }).catch(function(){
-      btn.disabled = false;
-      btn.textContent = 'Book your free demo';
-      alert('Network error. Please try again.');
-    });
+/* ── demo form: WhatsApp + Formspree (email backup) ── */
+var form = $('demoForm'), WA_NUMBER = '916388795644';
+function waText(fd){
+  var lines = ['Hi Veducore! I would like to book a free demo.',''];
+  var m = (fd.get('message')||'').toString().trim();
+  [['Name','name'],['Phone','phone'],['Business','business'],['Industry','industry'],['Plan','plan']].forEach(function(f){
+    var v = (fd.get(f[1])||'').toString().trim();
+    if(f[1]==='plan' && /^Plan:/.test(m)) return; // already in the message from "Build your plan"
+    if(v) lines.push(f[0]+': '+v);
   });
+  if(m) lines.push('', m);
+  return lines.join('\n');
+}
+form.addEventListener('submit',function(e){
+  e.preventDefault();
+  var fd = new FormData(form);
+  var waUrl = 'https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(waText(fd));
+  $('waBtn').href = waUrl;
+  // open WhatsApp right away (inside the click, so browsers allow it)
+  var waWin = null;
+  try{ waWin = window.open(waUrl,'_blank','noopener'); }catch(err){}
+  var btn = $('demoBtn'); btn.disabled = true; btn.textContent = 'Sending…';
+  function done(){
+    [].forEach.call(form.children,function(c){if(c.id!=='formMsg')c.style.display='none'});
+    $('formMsg').style.display='block';
+  }
+  fetch('https://formspree.io/f/xljgdjwr',{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+  .then(function(r){ if(!r.ok) throw 0; done(); })
+  .catch(function(){
+    // email backup failed — WhatsApp still works, so show the success state with the button
+    done();
+  });
+});
 })();
 </script>
 </body>

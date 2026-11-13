@@ -4,341 +4,193 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Privacy Policy – Veducore</title>
-<meta name="description" content="Veducore's Privacy Policy — how we collect, use and protect your data.">
+<meta name="description" content="How Veducore collects, uses, stores and protects personal data for businesses and their customers across every industry.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.veducore.in/privacy-policy.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{
-  --f:'Plus Jakarta Sans',system-ui,sans-serif;
-  --bg:#ffffff;--card:#f6f8fd;--ink:#0f1b33;--mute:#5a6784;
-  --line:#e2e8f4;--brand:#1d4ed8;--brand-ink:#fff;--pop:#2563eb;--soft:#e6eeff;
-  --radius:16px;
-  color-scheme:light;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font:16px/1.7 var(--f);overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0;z-index:-1;
-  background:linear-gradient(135deg,#f0f4ff 0%,#ffffff 40%,#f5f0ff 75%,#fff7f0 100%);
-  pointer-events:none}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-button{font-family:var(--f);cursor:pointer}
-
-/* Layout */
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-.content-wrap{max-width:760px;margin:0 auto;padding:0 20px}
-
-/* Header */
-header{
-  position:sticky;top:env(safe-area-inset-top,0px);z-index:160;
-  background:color-mix(in srgb,var(--bg) 90%,transparent);
-  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--line);
-}
-.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
-.logo{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:700;color:var(--ink);flex-shrink:0}
-.logo img{height:38px;width:auto;display:block}
-.nav-links{display:flex;gap:24px;list-style:none;font-size:14px;font-weight:500;color:var(--mute)}
-@media(max-width:760px){.nav-links{display:none!important}#navCta{display:none!important}.ham{display:flex!important}}
-.nav-links a{position:relative;padding:4px 0;transition:color .25s}
-.nav-links a:hover{color:var(--ink)}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;
-  padding:12px 22px;border-radius:10px;font-weight:600;font-size:15px;
-  background:var(--brand);color:var(--brand-ink);border:1.5px solid var(--brand);
-  transition:transform .25s,box-shadow .25s;cursor:pointer;white-space:nowrap
-}
-.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px -8px rgba(29,78,216,.45)}
-
-/* Hamburger */
-.ham{display:none;flex-direction:column;justify-content:space-between;
-  width:32px;height:22px;background:none;border:none;padding:0;cursor:pointer;z-index:200;position:relative}
-.ham span{display:block;height:2.5px;border-radius:3px;background:var(--ink);
-  transition:transform .35s cubic-bezier(.4,0,.2,1),opacity .25s,width .3s}
-.ham span:last-child{width:65%;margin-left:auto}
-.ham.open span:first-child{transform:translateY(9.75px) rotate(45deg);width:100%}
-.ham.open span:nth-child(2){opacity:0;transform:scaleX(0)}
-.ham.open span:last-child{width:100%;transform:translateY(-9.75px) rotate(-45deg)}
-
-/* Mobile nav */
-.mob-nav{
-  display:none;position:fixed;top:0;left:0;right:0;bottom:0;
-  width:100%;height:100%;min-height:100vh;min-height:100dvh;
-  background:#fff;z-index:155;
-  flex-direction:column;justify-content:flex-start;align-items:stretch;padding:0;
-  overflow-y:auto;
-}
-.mob-nav.open{display:flex}
-.mob-nav-bar{display:flex;align-items:center;justify-content:space-between;
-  width:100%;padding:0 20px;height:64px;flex-shrink:0;}
-.mob-nav-close{width:40px;height:40px;display:flex;align-items:center;justify-content:center;
-  background:none;border:none;cursor:pointer;color:var(--ink);border-radius:50%;transition:background .2s}
-.mob-nav-close:hover{background:var(--card)}
-.mob-nav-links{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;padding-bottom:40px}
-.mob-nav a{display:block;width:100%;padding:18px 24px;text-align:center;
-  font-size:22px;font-weight:700;color:var(--ink);border:none;transition:color .2s;letter-spacing:-.01em}
-.mob-nav a:not(.btn):hover{color:var(--brand)}
-.mob-nav a.btn{color:#fff!important;margin-top:32px;padding:15px 48px;font-size:16px;border-radius:14px}
-
-/* Hero banner */
-.legal-hero{
-  padding:60px 0 40px;
-  border-bottom:1px solid var(--line);
-  margin-bottom:52px;
-}
-.legal-hero .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;
-  color:#e11d6a;font-weight:600;margin-bottom:12px}
-.legal-hero h1{font-size:clamp(28px,5vw,48px);font-weight:800;letter-spacing:-.02em;line-height:1.12;margin-bottom:16px}
-.legal-hero p{color:var(--mute);font-size:15px;max-width:520px}
-.legal-meta{display:flex;gap:24px;margin-top:20px;flex-wrap:wrap}
-.legal-meta span{font-size:13px;color:var(--mute);display:flex;align-items:center;gap:6px}
-.legal-meta svg{flex-shrink:0;opacity:.6}
-
-/* Content */
-.legal-body{padding-bottom:80px}
-.legal-body h2{font-size:clamp(18px,3vw,24px);font-weight:700;color:var(--ink);
-  margin:40px 0 12px;padding-top:8px;letter-spacing:-.01em}
-.legal-body h2:first-child{margin-top:0}
-.legal-body h3{font-size:17px;font-weight:600;color:var(--ink);margin:24px 0 8px}
-.legal-body p{color:var(--mute);margin-bottom:16px;font-size:15px;line-height:1.75}
-.legal-body ul,.legal-body ol{color:var(--mute);padding-left:24px;margin-bottom:16px}
-.legal-body li{font-size:15px;line-height:1.75;margin-bottom:6px}
-.legal-body a{color:var(--brand);text-decoration:underline;text-underline-offset:3px}
-.legal-body a:hover{opacity:.8}
-.legal-body strong{color:var(--ink);font-weight:600}
-.divider{height:1px;background:var(--line);margin:40px 0}
-
-/* Highlight box */
-.note{background:var(--soft);border-left:3px solid var(--brand);border-radius:0 10px 10px 0;
-  padding:16px 20px;margin:24px 0}
-.note p{margin:0;font-size:14px;color:var(--ink)}
-
-/* Footer */
-footer{padding:48px 0 36px;font-size:14px;color:var(--mute);border-top:1px solid var(--line)}
-.foot-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
-.foot-links{display:flex;gap:20px;flex-wrap:wrap}
-.foot-links a{transition:color .2s}
-.foot-links a:hover{color:var(--brand)}
-@media(max-width:600px){
-  .foot-inner{flex-direction:column;align-items:center;text-align:center}
-  .foot-links{justify-content:center}
-  .legal-meta{flex-direction:column;gap:10px}
-  .nav{height:60px}
-  .logo img{height:30px}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="legal.css">
 </head>
 <body>
+<div class="progress" aria-hidden="true"></div>
 
-<!-- HEADER -->
-<header id="hdr">
+<header>
   <div class="wrap nav">
-    <a href="index.html" class="logo">
-      <img src="image.png" alt="Veducore logo" style="height:36px;width:auto;object-fit:contain">
-    </a>
-    <nav aria-label="Main navigation">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#plans">Packages</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <a href="index.html#contact" class="btn" id="navCta">Book a demo</a>
-    <button class="ham" id="hamBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobNav">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="Site.html" class="logo" aria-label="Veducore home"><img src="image.png" alt="Veducore"></a>
+    <ul class="nav-links">
+      <li><a href="Site.html#industries">Industries</a></li>
+      <li><a href="Site.html#platform">Platform</a></li>
+      <li><a href="Site.html#pricing">Pricing</a></li>
+      <li><a href="Site.html#faq">FAQ</a></li>
+    </ul>
+    <div style="display:flex;gap:8px">
+      <a href="Site.html" class="btn ghost">← Home</a>
+      <a href="Site.html#contact" class="btn">Book a demo</a>
+    </div>
   </div>
-  <nav class="mob-nav" id="mobNav" aria-label="Mobile navigation">
-    <div class="mob-nav-bar">
-      <a href="index.html" class="logo" onclick="closeMob()">
-        <img src="image.png" alt="Veducore logo" style="height:32px;width:auto;object-fit:contain">
-      </a>
-      <button class="mob-nav-close" aria-label="Close menu" onclick="closeMob()">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-    </div>
-    <div class="mob-nav-links">
-      <a href="index.html" onclick="closeMob()">Home</a>
-      <a href="index.html#about" onclick="closeMob()">About</a>
-      <a href="index.html#plans" onclick="closeMob()">Packages</a>
-      <a href="index.html#contact" onclick="closeMob()">Contact</a>
-      <a href="index.html#contact" class="btn" onclick="closeMob()">Book a demo</a>
-    </div>
-  </nav>
 </header>
 
 <main>
-  <!-- HERO -->
-  <div class="content-wrap">
-    <div class="legal-hero">
-      <div class="eyebrow">Legal</div>
-      <h1>Privacy Policy</h1>
-      <p>How we collect, use, store and protect your personal information when you use Veducore.</p>
-      <div class="legal-meta">
-        <span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          Last updated: October 2026
-        </span>
-        <span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Applicable in India
-        </span>
+  <div class="hero">
+    <div class="wrap">
+      <nav class="tabs" aria-label="Legal documents">
+        <a href="privacy-policy.html" class="on" aria-current="page">Privacy<span class="lg"> Policy</span></a>
+        <a href="refund-policy.html">Refund<span class="lg"> Policy</span></a>
+        <a href="terms.html">Terms<span class="lg"> &amp; Conditions</span></a>
+      </nav>
+      <h1>Privacy <em class="s">Policy</em></h1>
+      <p class="lead">How we collect, use, store and protect personal information when you — or your customers — use Veducore.</p>
+      <div class="meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Last updated: November 2026</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>Applicable in India</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>~6 min read</span>
+      </div>
+
+      <div class="glance">
+        <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M4.9 4.9l14.2 14.2"/></svg></i><b>We never sell your data</b><span>Not to advertisers, not to anyone.</span></div>
+        <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></i><b>You own your data</b><span>Export it any time, in full.</span></div>
+        <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></i><b>Encrypted in transit</b><span>HTTPS everywhere, role-based access.</span></div>
+        <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg></i><b>Deleted on request</b><span>Within 30 days, unless law says otherwise.</span></div>
       </div>
     </div>
+  </div>
 
-    <!-- BODY -->
-    <div class="legal-body">
+  <div class="wrap layout">
+    <details class="toc" open>
+      <summary>On this page</summary>
+      <ol id="tocList"></ol>
+      <div class="help"><b>Privacy question?</b>We usually reply within one business day.<a href="mailto:veducoree@gmail.com">veducoree@gmail.com →</a></div>
+    </details>
 
+    <article class="doc">
       <div class="note">
-        <p>By using Veducore, you agree to the collection and use of information as described in this policy. Please read it carefully.</p>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        <div>By using Veducore, you agree to the collection and use of information as described in this policy. Please read it carefully.</div>
       </div>
 
-      <h2>1. Who We Are</h2>
-      <p>Veducore is an all-in-one School OS — providing ERP, LMS, live classes, online tests and mobile app solutions for schools, colleges and coaching institutes in India. References to <strong>"Veducore", "we", "us"</strong> or <strong>"our"</strong> in this policy refer to the Veducore platform and its operators.</p>
-      <p>For any privacy-related queries, contact us at: <a href="mailto:veducore@gmail.com">veducore@gmail.com</a></p>
+      <section id="who-we-are">
+        <h2>Who we are</h2>
+        <p>Veducore is an all-in-one SaaS platform that helps businesses run their operations — ERP, CRM, billing, HR, inventory, analytics, and white-label web and mobile apps — across industries including education, healthcare, retail, restaurants, fitness, real estate, professional services and manufacturing.</p>
+        <p>References to <strong>"Veducore", "we", "us"</strong> or <strong>"our"</strong> refer to the Veducore platform and its operators. <strong>"Customer"</strong> means the business or organisation that subscribes to Veducore, and <strong>"End users"</strong> means the people whose data a Customer manages on the platform (for example students, patients, members, buyers or employees).</p>
+      </section>
 
-      <div class="divider"></div>
+      <section id="information-we-collect">
+        <h2>Information we collect</h2>
+        <h3>Information you provide</h3>
+        <ul>
+          <li><strong>Account details</strong> — name, email address, phone number, business name and role</li>
+          <li><strong>Business records</strong> — data your organisation enters into Veducore, such as customer, student, patient, member, employee, inventory, order and invoice records</li>
+          <li><strong>Payment information</strong> — billing address and transaction references (we do not store full card details)</li>
+          <li><strong>Communications</strong> — messages you send us through email, WhatsApp or our contact and demo forms</li>
+        </ul>
+        <h3>Information collected automatically</h3>
+        <ul>
+          <li><strong>Usage data</strong> — pages visited, features used and time spent on the platform</li>
+          <li><strong>Device information</strong> — browser type, operating system, device model and IP address</li>
+          <li><strong>Cookies &amp; local storage</strong> — to keep you signed in and remember preferences</li>
+        </ul>
+      </section>
 
-      <h2>2. Information We Collect</h2>
-      <p>We collect different types of information depending on how you interact with our platform:</p>
+      <section id="how-we-use-it">
+        <h2>How we use your information</h2>
+        <ul>
+          <li>Provide, operate, maintain and improve the Veducore platform</li>
+          <li>Process the transactions and records you create (billing, bookings, enrolments, orders and more)</li>
+          <li>Send service notifications, receipts and important updates</li>
+          <li>Respond to support requests and provide onboarding</li>
+          <li>Analyse usage in aggregate to improve the product</li>
+          <li>Detect and prevent fraud, abuse and security incidents</li>
+          <li>Comply with legal obligations</li>
+        </ul>
+        <p>We do <strong>not</strong> sell personal information, and we do not use your business records for advertising.</p>
+      </section>
 
-      <h3>2.1 Information You Provide</h3>
-      <ul>
-        <li><strong>Account details</strong> — name, email address, phone number, institute name</li>
-        <li><strong>Student data</strong> — enrollment information, academic records, attendance</li>
-        <li><strong>Payment information</strong> — billing address, transaction reference (we do not store card details)</li>
-        <li><strong>Communications</strong> — messages you send us via email or contact forms</li>
-      </ul>
+      <section id="data-sharing">
+        <h2>Data sharing</h2>
+        <p>We share information only in these circumstances:</p>
+        <ul>
+          <li><strong>Service providers</strong> — trusted vendors that help us run the platform (such as cloud hosting, payment processors and messaging providers), bound by confidentiality obligations</li>
+          <li><strong>Legal requirements</strong> — when required by law, court order or a government authority</li>
+          <li><strong>Business transfers</strong> — in connection with a merger, acquisition or sale of assets</li>
+          <li><strong>With your consent</strong> — any other sharing happens only with your explicit approval</li>
+        </ul>
+      </section>
 
-      <h3>2.2 Automatically Collected Information</h3>
-      <ul>
-        <li><strong>Usage data</strong> — pages visited, features used, time spent on platform</li>
-        <li><strong>Device information</strong> — browser type, OS, device model, IP address</li>
-        <li><strong>Cookies &amp; local storage</strong> — to maintain sessions and preferences</li>
-      </ul>
+      <section id="customer-data">
+        <h2>Data you manage for your customers</h2>
+        <p>When a business uses Veducore to manage its own End users' data, that business is the <strong>data controller</strong> (Data Fiduciary) and decides how the data is used. Veducore acts as a <strong>data processor</strong> and handles that data only on the business's instructions and to provide the service.</p>
+        <p>Some End users may be minors — for example students in schools or coaching institutes. The Customer is responsible for obtaining any consent required from parents or guardians. End users who want to access, correct or delete their data should contact the business they deal with; we will support that business in responding.</p>
+      </section>
 
-      <div class="divider"></div>
+      <section id="retention">
+        <h2>Data retention</h2>
+        <p>We keep personal data for as long as your account is active or as needed to provide the service. You may request deletion at any time. We delete or anonymise data within <strong>30 days</strong> of a valid request, unless we must keep it longer to meet legal, tax or accounting obligations.</p>
+        <p>After a subscription ends, Customer data remains available for export for 30 days, after which it may be permanently deleted.</p>
+      </section>
 
-      <h2>3. How We Use Your Information</h2>
-      <p>We use the information we collect to:</p>
-      <ul>
-        <li>Provide, operate and improve the Veducore platform</li>
-        <li>Process enrollments, fees and academic records</li>
-        <li>Send important service notifications and updates</li>
-        <li>Respond to your support queries</li>
-        <li>Analyse usage to improve user experience</li>
-        <li>Comply with legal obligations</li>
-        <li>Prevent fraud and ensure platform security</li>
-      </ul>
-      <p>We do <strong>not</strong> sell your personal information to third parties.</p>
+      <section id="security">
+        <h2>Data security</h2>
+        <ul>
+          <li>HTTPS encryption for all data in transit</li>
+          <li>Secure cloud infrastructure with access controls</li>
+          <li>Role-based permissions so each team member sees only what they need</li>
+          <li>Regular backups and monitoring</li>
+          <li>Limited employee access on a need-to-know basis</li>
+        </ul>
+        <p>No method of transmission over the internet is 100% secure. We take all reasonable steps to protect your data but cannot guarantee absolute security. If we become aware of a breach that affects your data, we will notify you as required by law.</p>
+      </section>
 
-      <div class="divider"></div>
+      <section id="cookies">
+        <h2>Cookies</h2>
+        <p>We use cookies and similar technologies to keep you signed in, remember your preferences and understand how the platform is used. You can control cookies in your browser settings, though disabling them may affect some features.</p>
+      </section>
 
-      <h2>4. Data Sharing</h2>
-      <p>We may share your information only in the following circumstances:</p>
-      <ul>
-        <li><strong>Service providers</strong> — trusted third-party vendors who assist in operating the platform (e.g. cloud hosting, payment processors), bound by confidentiality agreements</li>
-        <li><strong>Legal requirements</strong> — when required by law, court order or government authority</li>
-        <li><strong>Business transfers</strong> — in the event of a merger, acquisition or sale of assets</li>
-        <li><strong>With your consent</strong> — any other sharing requires your explicit approval</li>
-      </ul>
+      <section id="your-rights">
+        <h2>Your rights</h2>
+        <p>In line with applicable Indian law, including the Digital Personal Data Protection Act, 2023, you have the right to:</p>
+        <ul class="yes">
+          <li>Access the personal data we hold about you</li>
+          <li>Correct inaccurate or incomplete data</li>
+          <li>Request deletion of your data</li>
+          <li>Withdraw consent at any time, where processing is based on consent</li>
+          <li>Raise a grievance and have it addressed</li>
+        </ul>
+        <p>To exercise any of these rights, email <a href="mailto:veducoree@gmail.com">veducoree@gmail.com</a>.</p>
+      </section>
 
-      <div class="divider"></div>
+      <section id="changes">
+        <h2>Changes to this policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by email or a notice on the platform. Continuing to use Veducore after changes take effect means you accept the updated policy.</p>
+      </section>
 
-      <h2>5. Data Retention</h2>
-      <p>We retain your personal data for as long as your account is active or as needed to provide services. You may request deletion of your data at any time by contacting us. We will delete or anonymize your information within 30 days of a valid request, unless retention is required by law.</p>
-
-      <div class="divider"></div>
-
-      <h2>6. Data Security</h2>
-      <p>We implement industry-standard security measures to protect your data, including:</p>
-      <ul>
-        <li>HTTPS encryption for all data in transit</li>
-        <li>Secure cloud infrastructure with access controls</li>
-        <li>Regular security audits and monitoring</li>
-        <li>Limited employee access on a need-to-know basis</li>
-      </ul>
-      <p>While we take all reasonable steps to protect your data, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security.</p>
-
-      <div class="divider"></div>
-
-      <h2>7. Cookies</h2>
-      <p>Veducore uses cookies and similar technologies to keep you logged in, remember your preferences and understand how you use the platform. You can control cookies through your browser settings, though disabling cookies may affect platform functionality.</p>
-
-      <div class="divider"></div>
-
-      <h2>8. Children's Privacy</h2>
-      <p>Our platform is used by educational institutes and may process data of students including minors. This data is collected and managed by the institute (as the data controller). Veducore acts as a data processor and handles student data strictly as instructed by the institute. Parents or guardians can contact their institute administrator to access or delete student data.</p>
-
-      <div class="divider"></div>
-
-      <h2>9. Your Rights</h2>
-      <p>You have the right to:</p>
-      <ul>
-        <li>Access the personal data we hold about you</li>
-        <li>Correct inaccurate or incomplete data</li>
-        <li>Request deletion of your data</li>
-        <li>Object to or restrict processing in certain circumstances</li>
-        <li>Withdraw consent at any time (where processing is based on consent)</li>
-      </ul>
-      <p>To exercise any of these rights, contact us at <a href="mailto:veducore@gmail.com">veducore@gmail.com</a>.</p>
-
-      <div class="divider"></div>
-
-      <h2>10. Changes to This Policy</h2>
-      <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by email or by posting a notice on the platform. Continued use of Veducore after changes constitutes your acceptance of the updated policy.</p>
-
-      <div class="divider"></div>
-
-      <h2>11. Contact Us</h2>
-      <p>If you have any questions about this Privacy Policy, please reach out:</p>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:veducore@gmail.com">veducore@gmail.com</a></li>
-        <li><strong>Phone:</strong> <a href="tel:+916388795644">+91 63887 95644</a></li>
-      </ul>
-
-    </div>
+      <section id="contact">
+        <h2>Contact us</h2>
+        <p>Questions, requests or grievances about privacy — reach us here:</p>
+        <div class="contact">
+          <a href="mailto:veducoree@gmail.com"><small>Email</small><b>veducoree@gmail.com</b></a>
+          <a href="tel:+916388795644"><small>Phone</small><b>+91 63887 95644</b></a>
+          <a href="https://wa.me/916388795644"><small>WhatsApp</small><b>Chat with us</b></a>
+        </div>
+      </section>
+    </article>
   </div>
 </main>
 
-<!-- FOOTER -->
 <footer>
-  <div class="wrap">
-    <div class="foot-inner">
-      <a href="index.html" class="logo">
-        <img src="image.png" alt="Veducore" style="height:32px;width:auto;object-fit:contain">
-      </a>
-      <div class="foot-links">
-        <a href="privacy-policy.html"><strong style="color:var(--brand)">Privacy Policy</strong></a>
-        <a href="refund-policy.html">Refund Policy</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
-      <span>© 2026 Veducore. All rights reserved.</span>
-    </div>
+  <div class="wrap fin">
+    <a href="Site.html" class="logo"><img src="image.png" alt="Veducore" style="height:28px"></a>
+    <nav aria-label="Legal">
+      <a href="privacy-policy.html" class="on">Privacy Policy</a>
+      <a href="refund-policy.html">Refund Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="Site.html#contact">Contact</a>
+    </nav>
+    <span>© 2026 Veducore. All rights reserved.</span>
   </div>
 </footer>
 
-<script>
-var hamBtn = document.getElementById('hamBtn');
-var mobNav = document.getElementById('mobNav');
-function closeMob(){
-  hamBtn.classList.remove('open');
-  mobNav.classList.remove('open');
-  hamBtn.setAttribute('aria-expanded','false');
-  document.body.style.overflow = '';
-}
-hamBtn.addEventListener('click', function(){
-  var open = mobNav.classList.toggle('open');
-  hamBtn.classList.toggle('open', open);
-  hamBtn.setAttribute('aria-expanded', open);
-  document.body.style.overflow = open ? 'hidden' : '';
-});
-</script>
+<button class="top" aria-label="Back to top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="legal.js"></script>
 </body>
 </html>
